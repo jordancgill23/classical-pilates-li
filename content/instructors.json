@@ -15,7 +15,7 @@
       "photo_position": "38% 30%",
       "button": "Train with Lynn",
       "link": "#schedule",
-      "button_class": "btn btn-book ibtn alt-w",
+      "button_class": "btn btn-book ibtn alt-b",
       "button_id": "train-lynn"
     },
     {
@@ -31,7 +31,7 @@
       "photo_position": "",
       "button": "See all Wellness Services with Jen",
       "link": "#wellbook",
-      "button_class": "btn btn-book ibtn alt-b",
+      "button_class": "btn btn-book ibtn alt-w",
       "button_id": "jen-wellness"
     }
   ]
