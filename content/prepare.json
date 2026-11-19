@@ -1,0 +1,49 @@
+{
+  "label": "Before your first visit",
+  "heading": "What to *bring*.",
+  "tiles": [
+    {
+      "title": "Grip socks",
+      "text": "Bring a clean pair to change into. No bare feet in the studio."
+    },
+    {
+      "title": "What to wear",
+      "text": "Form-fitting clothes. Leggings or long pants work best for full range of motion."
+    },
+    {
+      "title": "No metal or zippers",
+      "text": "Skip zippers, buttons and jewelry that can scratch the equipment."
+    },
+    {
+      "title": "Skip the lotion",
+      "text": "Perfume, makeup and lotions can stain the upholstery."
+    }
+  ],
+  "faq_heading": "Questions",
+  "faqs": [
+    {
+      "question": "What's your cancellation policy?",
+      "answer": "Please cancel at least 24 hours before your session."
+    },
+    {
+      "question": "I've never done Pilates. Is that okay?",
+      "answer": "Absolutely. Every new client starts with a $40 Foundational Connections session to learn the essentials and the Pilates Intelligence Program™ before joining classes."
+    },
+    {
+      "question": "How many people are in a class?",
+      "answer": "Never more than three, so you always get real attention from your instructor."
+    },
+    {
+      "question": "I have an injury. Can I still come?",
+      "answer": "Yes. Let Lynn know about any injuries or physical concerns when you book, and your program will be built around them."
+    },
+    {
+      "question": "Where do I park?",
+      "answer": "The studio is at 23 Portside Drive in Holbrook, directly off Sunrise Hwy behind the Stop & Shop shopping center, with easy parking."
+    },
+    {
+      "question": "How do I pay?",
+      "answer": "With Venmo or a Vagaro membership."
+    }
+  ]
+}

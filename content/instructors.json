@@ -1,0 +1,38 @@
+{
+  "label": "The team",
+  "heading": "Instructors",
+  "people": [
+    {
+      "name": "Lynn Melfi",
+      "role": "Owner & lead instructor",
+      "credentials": "NCPT · Third-generation classical instructor · 15+ years teaching",
+      "bio": [
+        "Lynn runs the studio in the spirit of Joe Pilates: individualized, intentional and deeply effective.",
+        "After years of watching what helped clients thrive, she built the Pilates Intelligence Program™ to give every client private-level attention."
+      ],
+      "photo": "/images/headshot.jpg",
+      "photo_alt": "Lynn Melfi, owner and instructor",
+      "photo_position": "38% 30%",
+      "button": "Train with Lynn",
+      "link": "#schedule",
+      "button_class": "btn btn-book ibtn alt-w",
+      "button_id": "train-lynn"
+    },
+    {
+      "name": "Jen Ward",
+      "role": "Wellness Pilates",
+      "credentials": "Classical Pilates Instructor · Licensed Acupuncturist · Ayurvedic Practitioner · Fletcher Practitioner · Pelvic Floor Specialist",
+      "bio": [
+        "Jen has over two decades of experience in movement and wellness. Pilates resolved her own chronic nerve pain when nothing else could, and that shapes how she teaches: with compassion, precision and a whole-body perspective.",
+        "She specializes in supporting women through every stage of life, from fertility and perimenopause to stress recovery and beyond."
+      ],
+      "photo": "/images/jen-ward-head.jpg",
+      "photo_alt": "Jen Ward, Wellness Pilates instructor",
+      "photo_position": "",
+      "button": "See all Wellness Services with Jen",
+      "link": "#wellbook",
+      "button_class": "btn btn-book ibtn alt-b",
+      "button_id": "jen-wellness"
+    }
+  ]
+}

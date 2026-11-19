@@ -1,0 +1,105 @@
+{
+  "label": "Classes & pricing",
+  "heading": "Simple, *honest* pricing.",
+  "cards": [
+    {
+      "details": "Your first visit",
+      "price_note": "",
+      "price": "$40",
+      "button_class": "btn btn-book alt-b",
+      "name": "Foundational Connections",
+      "style": "plan new",
+      "bullets": [
+        "Learn the essential connections",
+        "Intro to the Pilates Intelligence Program™",
+        "Personal intake before you arrive"
+      ],
+      "button": "Book my first session",
+      "label": "New clients start here",
+      "kind": "",
+      "link": "#schedule"
+    },
+    {
+      "details": "Max 3 clients per class",
+      "price_note": "/ 4 classes",
+      "price": "$150",
+      "button_class": "btn btn-book alt-w",
+      "name": "Group classes",
+      "style": "plan feat",
+      "bullets": [
+        "50 minutes",
+        "Reformer, Tower, Wunda Chair, Mat and Barrel",
+        "Your own program on your tablet"
+      ],
+      "button": "Book a class",
+      "label": "Most popular",
+      "kind": "",
+      "link": "#schedule"
+    },
+    {
+      "details": "Or 4 for $360",
+      "price_note": "/ 50 min",
+      "price": "$100",
+      "button_class": "btn btn-book alt-b",
+      "name": "Private session",
+      "style": "plan",
+      "bullets": [
+        "Fully customized to your body and goals",
+        "Scheduled at a time that works for you",
+        "Ideal for injuries or specific goals"
+      ],
+      "button": "Request private",
+      "label": "One-on-one",
+      "kind": "Private session (50 min)",
+      "link": "#private"
+    },
+    {
+      "details": "Or 4 for $180",
+      "price_note": "/ 30 min",
+      "price": "$50",
+      "button_class": "btn btn-book alt-w",
+      "name": "Mini private",
+      "style": "plan dark",
+      "bullets": [
+        "Focused one-on-one work",
+        "Great for busy schedules",
+        "Perfect add-on to group classes"
+      ],
+      "button": "Request private",
+      "label": "Short on time",
+      "kind": "Mini private (30 min)",
+      "link": "#private"
+    }
+  ],
+  "open_studio": {
+    "name": "Open-Studio Session",
+    "prices": [
+      {
+        "amount": "$30",
+        "note": "drop-in"
+      },
+      {
+        "amount": "$115",
+        "note": "/ 4 classes"
+      }
+    ],
+    "description": "Accelerate your progress and see results faster by doubling up on your weekly practice. After attending your regular session during the week, join our Saturday Open Studio to work independently using the Pilates Intelligence program on your tablet.",
+    "bullets": [
+      "Add a second or third workout to your week affordably",
+      "Work independently using Pilates Intelligence tablets",
+      "Must attend a regular weekly session first"
+    ]
+  },
+  "wellness": {
+    "label": "Body, mind & spirit · with Jen Ward",
+    "name": "Wellness Pilates",
+    "description": "Classical Pilates paired with breathwork, acupressure and Ayurveda. A gentle, adapted approach for moving better, safely and with confidence.",
+    "bullets": [
+      "Friday Reset Lounge: 30 min Pilates+ with a Stress Less Acu-Nap",
+      "Group or private: 35 min Pilates + 15 min wellness reset",
+      "Monthly Saturday Mat and Saturday Tower sessions"
+    ],
+    "button": "Book your first wellness session"
+  },
+  "note": "Pay with Venmo or a Vagaro membership. Classes fill quickly, so booking early is recommended."
+}

@@ -3,7 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const ROOT = __dirname;
 const OUT = path.join(ROOT, 'public');
-const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/site.json'), 'utf8'));
+const data = {};
+for (const f of fs.readdirSync(path.join(ROOT, 'content')).filter(f => f.endsWith('.json'))) {
+  data[f.replace(/\.json$/, '')] = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', f), 'utf8'));
+}
 const tpl = fs.readFileSync(path.join(ROOT, 'src/index.html'), 'utf8');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

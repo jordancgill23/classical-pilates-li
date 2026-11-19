@@ -1,0 +1,18 @@
+{
+  "tagline": "The classical method, taught the way Joseph Pilates intended. Beginners welcome, and never more than three people in a session.",
+  "button": "Book your $40 first session",
+  "slides": [
+    {
+      "image": "/images/hero-studio.jpg",
+      "alt": "Calm Pilates studio with rows of reformers"
+    },
+    {
+      "image": "/images/hero-reformer-arches.jpg",
+      "alt": "Client in a side plank on a reformer"
+    },
+    {
+      "image": "/images/hero-reformer-plank.jpg",
+      "alt": "Client in a plank on a reformer in a warm studio"
+    }
+  ]
+}

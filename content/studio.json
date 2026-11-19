@@ -1,0 +1,62 @@
+{
+  "label": "The studio",
+  "heading": "The complete apparatus.",
+  "intro": "Most studios stop at the reformer. You'll train on every piece Joseph Pilates designed, all top-of-the-line Gratz equipment.",
+  "equipment": [
+    {
+      "name": "Reformer",
+      "caption": "The foundation of the method",
+      "image": "/images/app-reformer.jpg",
+      "alt": "Reformers in the studio"
+    },
+    {
+      "name": "Cadillac",
+      "caption": "Springs, bars and support",
+      "image": "/images/app-cadillac.jpg",
+      "alt": "Towers and half cadillacs"
+    },
+    {
+      "name": "Wunda chair",
+      "caption": "Strength and balance",
+      "image": "/images/app-wunda.jpg",
+      "alt": "Wunda chairs"
+    },
+    {
+      "name": "Ladder barrel",
+      "caption": "Spine and flexibility",
+      "image": "/images/app-barrel.jpg",
+      "alt": "Ladder barrel"
+    },
+    {
+      "name": "Electric chair",
+      "caption": "Lower-body control",
+      "image": "/images/app-electric.jpg",
+      "alt": "Electric chair"
+    },
+    {
+      "name": "Arm chair",
+      "caption": "Upper-body strength",
+      "image": "/images/app-arm.jpg",
+      "alt": "Arm chair"
+    },
+    {
+      "name": "Pedi-Pole",
+      "caption": "Posture and alignment",
+      "image": "",
+      "alt": ""
+    },
+    {
+      "name": "Spine Corrector",
+      "caption": "Mobility and core strength",
+      "image": "",
+      "alt": ""
+    },
+    {
+      "name": "Small apparatus",
+      "caption": "Magic circle, toe corrector and more",
+      "image": "",
+      "alt": ""
+    }
+  ],
+  "hint": "Swipe to see every piece →"
+}
