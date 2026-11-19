@@ -320,6 +320,13 @@
                     "label": "Bullet",
                     "widget": "text"
                   }
+                },
+                {
+                  "name": "button",
+                  "label": "Button text",
+                  "widget": "string",
+                  "required": false,
+                  "hint": "Leave empty to hide the button."
                 }
               ]
             },

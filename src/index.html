@@ -366,6 +366,7 @@ footer{padding:64px 0 40px}
 .btn.alt-w,.plan .btn.alt-w,.plan.dark .btn.alt-w,.plan.feat .btn.alt-w{background:#fff !important;color:var(--navy) !important;border:1px solid var(--navy) !important}
 .plan.dark .btn.alt-b,.plan.feat .btn.alt-b{border-color:#fff !important}
 .btn.alt-b:hover{background:#0B3B75 !important}.btn.alt-w:hover{background:#F1E8DA !important}
+.plan.well.open .obtn{flex:none;width:auto;padding:0 30px;white-space:nowrap}@media(max-width:900px){.plan.well.open .obtn{width:100%}}
 </style>
 <script>
 if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var s=document.createElement('script');s.src='https://identity.netlify.com/v1/netlify-identity-widget.js';s.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});netlifyIdentity.init();};document.head.appendChild(s);}
@@ -441,7 +442,8 @@ if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var
  </div>
 
  <div class="plan well open"><div class="wl-l"><h3>{{pricing.open_studio.name}}</h3><div class="oprice">{{#each pricing.open_studio.prices}}<span>{{amount}} <small>{{note}}</small></span>{{/each pricing.open_studio.prices}}</div><div class="alt">{{pricing.open_studio.description}}</div></div>
-  <ul>{{#each pricing.open_studio.bullets}}<li>{{.}}</li>{{/each pricing.open_studio.bullets}}</ul></div>
+  <ul>{{#each pricing.open_studio.bullets}}<li>{{.}}</li>{{/each pricing.open_studio.bullets}}</ul>{{#if pricing.open_studio.button}}
+  <a href="#schedule" class="btn btn-book obtn alt-b">{{pricing.open_studio.button}}</a>{{/if pricing.open_studio.button}}</div>
 
  <div class="plan well dark"><div class="wl-l"><div class="k">{{pricing.wellness.label}}</div><h3>{{pricing.wellness.name}}</h3><div class="alt">{{pricing.wellness.description}}</div></div>
   <ul>{{#each pricing.wellness.bullets}}<li>{{.}}</li>{{/each pricing.wellness.bullets}}</ul>
