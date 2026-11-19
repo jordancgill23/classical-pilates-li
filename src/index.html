@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classical Pilates of Long Island</title>
+<meta name="description" content="Classical Pilates of Long Island: private and semi-private classical Pilates on the full apparatus in Holbrook, NY.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#E3D2B8;--cream2:#EFE5D5;--paper:#F8F2E9;--navy:#032D5F;--navy2:#34496B;--taupe:#B1A290;--copper:#B87333;--line:#CDBDA5}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Lato,system-ui,sans-serif;font-weight:400;color:var(--navy);background:var(--cream);line-height:1.75;font-size:17px}
+h1,h2,h3,.disp{font-family:'Playfair Display',Georgia,serif;font-weight:600;line-height:1.12}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.eyebrow{display:flex;align-items:center;gap:16px;font-size:12px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--navy2);margin-bottom:22px}
+.eyebrow:before{content:"";width:40px;height:1px;background:var(--copper)}
+.eyebrow.lt{color:#D9CBB4}
+/* buttons: original pill shape, new palette */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;transition:background .25s,color .25s;cursor:pointer;font-family:inherit}
+.btn-book{background:var(--navy);color:#fff;border:1px solid var(--copper)}
+.btn-book:hover{background:#0B3B75}
+.btn-ghost{border:1px solid rgba(255,255,255,.75);color:#fff;background:transparent}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-line{border:1px solid var(--navy);color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff}
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;color:#fff;display:flex;flex-direction:column;overflow:hidden;background:#6F665E}
+.slide{position:absolute;inset:0;transition:opacity 1.4s ease}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,45,95,.55) 0%,rgba(3,45,95,.3) 35%,rgba(3,45,95,.55) 100%)}
+nav{position:relative;z-index:3}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;height:104px;max-width:1340px}
+.nlogo img{height:62px;width:auto}
+.links{display:flex;gap:34px;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.links a{padding:8px 0;border-bottom:1px solid transparent}.links a:hover{border-color:rgba(255,255,255,.7)}
+.hcopy{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 24px 120px}
+.rule{width:64px;height:1px;background:var(--copper)}
+.hlogo{width:min(620px,86vw);height:auto;margin:36px 0}
+.hcopy p{font-size:16px;letter-spacing:.14em;max-width:620px;opacity:.95}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:34px}
+.ctrl{position:absolute;z-index:3;left:32px;bottom:26px;display:flex;align-items:center}
+.ctrl button{width:44px;height:44px;background:none;border:0;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.ctrl .dot span{display:block;width:30px;height:1px;background:rgba(255,255,255,.6)}
+.ctrl .dot.on span{background:var(--copper)}
+/* three */
+.three{display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:center;padding:140px 32px}
+.three .n{font-family:'Playfair Display',serif;font-weight:300;font-size:clamp(11rem,24vw,21rem);line-height:.75;color:var(--copper)}
+.three h2{font-size:clamp(2.4rem,4.4vw,3.8rem);margin-bottom:24px;max-width:660px}
+.three p{color:var(--navy2);max-width:580px;margin-bottom:14px}
+/* apparatus */
+.app{background:var(--navy);color:#fff;padding:120px 0}
+.ah{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:48px}
+.ah h2{font-size:clamp(2.6rem,5vw,4.2rem)}
+.ah p{max-width:420px;color:#D9CBB4}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 32px 14px;max-width:1304px;margin:0 auto;scrollbar-color:var(--copper) transparent}
+.rail figure{scroll-snap-align:start}
+.rail .im{aspect-ratio:3/4;overflow:hidden;background:#123d6e}
+.rail figcaption{margin-top:16px;font-family:'Playfair Display',serif;font-size:1.6rem;line-height:1.2}
+.rail figcaption span{display:block;font-family:Lato;font-size:.9rem;color:#D9CBB4}
+.hint{max-width:1304px;margin:18px auto 0;padding:0 32px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D9CBB4}
+/* program */
+.prog{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center;padding:140px 32px}
+.prog h2{font-size:clamp(2.4rem,4.4vw,3.6rem);margin-bottom:24px}
+.prog p{color:var(--navy2);margin-bottom:14px;max-width:520px}
+.tablet{background:var(--navy);padding:20px;border-radius:28px;box-shadow:0 50px 80px -50px rgba(3,45,95,.7)}
+.screen{background:var(--paper);border-radius:14px;padding:30px}
+.screen .t{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:400}
+.screen .m{font-size:.9rem;color:var(--navy2);margin:4px 0 20px}
+.screen ol{list-style:none;counter-reset:s}
+.screen li{counter-increment:s;display:flex;padding:13px 0;border-top:1px solid #E1D5C2;font-size:.98rem}
+.screen li:before{content:counter(s);color:#8A5427;font-weight:700;margin-right:16px}
+.screen li span:first-child{flex:1}
+.screen .done{color:var(--navy2)}.screen .nx{font-weight:700}
+/* sessions */
+.ses{background:var(--cream2);padding:130px 0}
+.ses h2{font-size:clamp(2.6rem,5vw,4.2rem);margin-bottom:56px}
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.s .im{aspect-ratio:4/5;overflow:hidden;margin-bottom:26px}
+.s .num{display:flex;align-items:center;gap:14px;margin-bottom:12px;font-family:'Playfair Display',serif;font-style:italic;font-size:1.4rem;color:var(--navy2)}
+.s .num:after{content:"";flex:1;height:1px;background:var(--taupe)}
+.s h3{font-size:2.2rem;font-weight:400;margin-bottom:10px}
+.s p{color:var(--navy2);margin-bottom:22px}
+.s a{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;border-bottom:1px solid var(--copper);padding-bottom:5px}
+/* lynn */
+.lynn{display:grid;grid-template-columns:1fr 1fr;min-height:680px}
+.lynn .im{overflow:hidden;background:#CDBCA3}
+.lynn .im img{object-position:38% 40%}
+.lynn .tx{background:var(--taupe);padding:100px 80px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.lynn h2{font-size:clamp(3rem,5.4vw,4.6rem)}
+.lynn .cred{font-family:'Playfair Display',serif;font-style:italic;font-size:1.5rem;margin:10px 0 26px}
+.lynn p{margin-bottom:14px;max-width:480px}
+.lynn .btn{margin-top:20px}
+/* review */
+.rev{text-align:center;padding:140px 32px}
+.rev .stars{color:var(--copper);letter-spacing:8px;font-size:1.1rem}
+.rev blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(2rem,4vw,3rem);max-width:880px;margin:24px auto;line-height:1.25}
+.rev small{font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--navy2)}
+/* book */
+.book{background:var(--navy);color:#fff;padding:130px 0}
+.bg{display:grid;grid-template-columns:1fr 1fr;gap:100px}
+.book h2{font-size:clamp(2.6rem,5vw,4.2rem);margin-bottom:36px}
+.book dl{display:grid;gap:24px}
+.book dt{font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#D9CBB4;margin-bottom:4px}
+.book dd{font-size:1.1rem}
+.book dd a{border-bottom:1px solid rgba(255,255,255,.35)}
+form{background:var(--paper);color:var(--navy);padding:44px;border-top:2px solid var(--copper)}
+form h3{font-size:2.3rem;font-weight:400;margin-bottom:4px}
+form .sub{color:var(--navy2);margin-bottom:8px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin:22px 0 8px}
+input,select{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:0;font:inherit;font-weight:400;background:#fff;color:var(--navy)}
+input:focus,select:focus{outline:2px solid var(--copper);outline-offset:0;border-color:var(--copper)}
+.pills{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.pills label{margin:0;text-align:center;border:1px solid var(--line);padding:13px;cursor:pointer;background:#fff;letter-spacing:.12em}
+.pills input{position:absolute;opacity:0;width:1px;height:1px}
+.pills label:has(input:checked){border-color:var(--navy);background:var(--navy);color:#fff}
+.pills label:has(input:focus-visible){outline:2px solid var(--copper)}
+form .btn{width:100%;margin-top:28px}
+.note{text-align:center;font-size:.9rem;color:var(--navy2);margin-top:14px}
+.note a{border-bottom:1px solid var(--copper)}
+.ok{display:none;text-align:center;padding:50px 0}
+.ok .rule{margin:0 auto 22px}
+footer{background:#02234A;color:#D9CBB4;padding:70px 0 110px;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+footer img{width:220px;height:auto}
+footer a:hover{color:#fff}
+.copy{text-align:center;margin-top:44px;font-size:.8rem;color:#8E9AB0}
+.sticky{display:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+@media(max-width:980px){
+ body{font-size:16px}
+ .links,nav .btn{display:none}
+ nav .wrap{height:84px}
+ .nlogo img{height:48px}
+ .three,.prog,.bg{grid-template-columns:1fr;gap:36px}
+ .three{padding:90px 24px}.three .n{font-size:9rem}
+ .prog{padding:90px 24px;gap:50px}
+ .sg{grid-template-columns:1fr;gap:56px}
+ .lynn{grid-template-columns:1fr}.lynn .im{height:440px}
+ .lynn .tx{padding:64px 24px}
+ .app,.ses,.book{padding:90px 0}.rev{padding:90px 24px}
+ .wrap{padding:0 24px}.rail{padding:0 24px 14px}.hint{padding:0 24px}
+ form{padding:30px 22px}
+ .hcopy{padding-bottom:130px}
+ .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:30;gap:10px;padding:12px 16px;background:rgba(227,210,184,.97);border-top:1px solid var(--line)}
+ .sticky a{flex:1}
+ footer{padding-bottom:120px}
+}
+
+.pri{padding:120px 0;background:var(--paper)}
+.pri h2{font-size:clamp(40px,5vw,64px);margin-bottom:56px}
+.pri h2 i{color:var(--copper)}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:6px;padding:34px 28px;display:flex;flex-direction:column}
+.plan.feat{background:var(--navy);color:#fff;border-color:var(--copper)}
+.plan.new{border-color:var(--copper)}
+.plan .k{font-size:11px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--copper);margin-bottom:14px}
+.plan h3{font-size:30px;margin-bottom:14px}
+.plan .price{font-family:'Playfair Display',Georgia,serif;font-size:52px;line-height:1}
+.plan .price small{font-family:Lato,sans-serif;font-size:14px;opacity:.75}
+.plan .alt{font-size:14px;opacity:.8;margin:8px 0 20px}
+.plan ul{list-style:none;margin-bottom:28px;flex:1}
+.plan li{font-size:15px;padding:8px 0;border-top:1px solid var(--line)}
+.plan.feat li{border-color:rgba(255,255,255,.2)}
+.plan .btn{width:100%;padding:0 12px;font-size:12px;letter-spacing:.1em;white-space:nowrap}
+.plan.feat .btn-book{background:#fff;color:var(--navy)}
+.paynote{margin-top:32px;font-size:15px;color:var(--navy2)}
+@media(max-width:1100px){.pgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.pgrid{grid-template-columns:1fr}.pri{padding:80px 0}}
+
+.sched{padding:120px 0;background:var(--cream2)}
+.sched h2{font-size:clamp(38px,4.6vw,58px)}
+.eyebrow.c{justify-content:center}.eyebrow.c:after{content:"";width:40px;height:1px;background:var(--copper)}
+.vg{background:#FBF7F1;border:1px solid #D9CBB4;box-shadow:0 40px 80px -60px rgba(3,45,95,.45);text-align:left}
+.vgtop{padding:22px 36px;border-bottom:1px solid #D9CBB4}
+.vg .disp{font-family:'Playfair Display',Georgia,serif;font-weight:300;margin:0}
+.vg .intro{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 34px;border:1px solid var(--copper);background:var(--navy);color:#fff;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;font-family:Lato,system-ui,sans-serif;border-radius:999px}
+.tlink{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--navy);border:0;border-bottom:1px solid #B1A290;padding:0 0 6px;background:transparent;cursor:pointer;font-family:Lato,system-ui,sans-serif}
+.svc{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 24px;background:#F6EFE4;border:1px solid #D9CBB4;cursor:pointer;text-align:left;font-family:Lato,system-ui,sans-serif;color:var(--navy);font-size:16px}
+.svc:hover,.day:hover,.slot:hover{border-color:var(--copper)}
+.day{min-width:76px;min-height:76px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:1px solid #D9CBB4;cursor:pointer;font-family:Lato,system-ui,sans-serif}
+.slot{min-height:46px;padding:0 18px;background:#F6EFE4;border:1px solid #D9CBB4;cursor:pointer;font-family:Lato,system-ui,sans-serif;font-size:15px;color:var(--navy)}
+.vg .lbl{display:block;font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--navy);margin-bottom:6px}
+.fld{width:100%;padding:12px 0;border:0;border-bottom:1px solid #8C7D6B;background:transparent;font:inherit;font-size:17px;color:var(--navy)}
+.fld:focus{outline:none;border-bottom-color:var(--copper)}
+
+@media(max-width:800px){.sched{padding:80px 0}.vg .g2{grid-template-columns:1fr !important}.vg .row{flex-direction:column !important;align-items:flex-start !important}.wpad{padding:28px 20px !important}.vgtop{padding:18px 20px}}
+#vgform{background:none !important;padding:0 !important;border:0 !important}#vgform h3{font-size:32px;margin:0}.vg label.lbl{margin:0 0 6px;font-size:11px}.vg .fld{border:0;border-bottom:1px solid #8C7D6B;padding:12px 0;background:transparent}#vgform .intro{width:auto;margin:0}
+.plan.well{grid-column:1/-1;flex-direction:row;align-items:center;gap:40px;margin-top:22px}.plan.well .wl-l{flex:1.2}.plan.well ul{flex:1;margin:0}.plan.well .btn{width:auto;flex:none;padding:0 30px}@media(max-width:900px){.plan.well{flex-direction:column;align-items:stretch;gap:20px}.plan.well .btn{width:100%}}
+.rev{text-align:left}.rev h2{text-align:center;font-size:clamp(38px,4.6vw,58px);margin:0 0 56px}.rev h2 i{color:var(--copper)}
+.rgrid{columns:3 320px;column-gap:22px}
+.rc{break-inside:avoid;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:30px 28px;margin:0 0 22px}
+.rc .stars{font-size:.9rem;letter-spacing:5px}
+.rc blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;line-height:1.45;margin:14px 0 18px;max-width:none}
+.rc figcaption{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--navy2)}
+.well2{padding:120px 0;background:var(--cream)}
+.wtop{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.wimg{aspect-ratio:4/5;overflow:hidden;border-radius:4px}
+.well2 h2{font-size:clamp(38px,4.6vw,58px);margin-bottom:26px}.well2 h2 i{color:var(--copper)}
+.wtx>p{margin-bottom:18px;color:var(--navy)}
+.wtx h3{font-size:32px;margin:30px 0 8px}
+.creds{font-size:12px !important;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper) !important;line-height:1.8}
+.wcta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.wnote{font-size:14px;color:var(--navy2) !important;margin-top:14px}
+.wh{font-size:clamp(30px,3.4vw,42px);margin:90px 0 30px;padding-top:40px;border-top:1px solid var(--line)}
+.wgrid2{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wo{background:var(--paper);border:1px solid var(--line);border-top:2px solid var(--copper);border-radius:4px;padding:26px 24px}
+.wo h4{font-family:'Playfair Display',serif;font-weight:400;font-size:24px;line-height:1.15;margin-bottom:10px}
+.wo p{font-size:15px;line-height:1.65;color:var(--navy2)}
+@media(max-width:980px){.wtop{grid-template-columns:1fr;gap:40px}.wgrid2{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.well2{padding:80px 0}.wgrid2{grid-template-columns:1fr}.wcta .btn{width:100%}}
+.prep{padding:120px 0;background:var(--paper)}
+.prep h2{font-size:clamp(38px,4.6vw,58px);margin-bottom:48px}.prep h2 i{color:var(--copper)}
+.ptiles{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.pt{border-top:1px solid var(--copper);padding-top:20px}
+.pt h4{font-family:'Playfair Display',serif;font-weight:400;font-size:26px;margin-bottom:8px}
+.pt p{font-size:15px;line-height:1.65;color:var(--navy2)}
+.fqh{font-size:clamp(30px,3.4vw,42px);margin:80px 0 20px}
+.fqs{border-top:1px solid var(--line);max-width:900px}
+.fq{border-bottom:1px solid var(--line)}
+.fq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:18px;font-weight:400}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary:after{content:"+";font-family:'Playfair Display',serif;font-size:30px;line-height:1;color:var(--copper);transition:transform .25s}
+.fq[open] summary:after{transform:rotate(45deg)}
+.fq p{padding:0 0 22px;color:var(--navy2);max-width:720px}
+@media(max-width:980px){.ptiles{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.prep{padding:80px 0}.ptiles{grid-template-columns:1fr}}
+.vgw{background:transparent;border:0;box-shadow:none;padding:0;min-height:420px}.vgw iframe{border-radius:6px;background:transparent}.vgw .vagaro{width:100% !important;margin-top:10px !important}.vgw .vagaro a,.vgw .vagaro{font-size:11px !important;color:#8C7D6B !important;letter-spacing:.04em}.vgw #frameTitle{display:none}.vgw iframe{width:100% !important;border:0}
+#frameTitle{display:none !important}
+.inst{padding:120px 0;background:var(--taupe)}
+.inst h2{font-size:clamp(40px,5vw,64px);margin-bottom:56px}
+.igrid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.ic{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:34px 30px;display:grid;grid-template-columns:120px 1fr;gap:26px;align-items:start}
+.iph{width:120px;height:120px;border-radius:50%;overflow:hidden;border:1px solid var(--copper)}
+.ic h3{font-size:34px}
+.irole{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--copper);margin:6px 0 10px}
+.icred{font-family:'Playfair Display',serif;font-style:italic;font-size:19px;line-height:1.35;margin-bottom:14px}
+.ic p{font-size:16px;margin-bottom:10px}
+.wtop1{max-width:820px}.wtop1>p{margin-bottom:18px}
+@media(max-width:980px){.igrid{grid-template-columns:1fr}}
+@media(max-width:560px){.inst{padding:80px 0}.ic{grid-template-columns:1fr;padding:28px 22px}.iph{width:96px;height:96px}}
+.prog strong{font-weight:700}.pi-close{font-family:'Playfair Display',serif;font-style:italic;font-size:26px;line-height:1.3;color:var(--copper);margin-top:10px}
+.bkm{position:fixed;inset:0;z-index:1000;background:rgba(3,29,62,.72);display:flex;align-items:center;justify-content:center;padding:24px;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .25s}
+.bkm.on{visibility:visible;opacity:1;pointer-events:auto}
+.bkp{background:var(--paper);width:100%;max-width:920px;height:min(90vh,900px);display:flex;flex-direction:column;border-radius:8px;overflow:hidden;border:1px solid var(--copper);box-shadow:0 40px 100px -30px rgba(0,0,0,.6)}
+.bkh{background:var(--navy);color:#fff;display:flex;align-items:center;gap:20px;padding:18px 26px;border-bottom:2px solid var(--copper)}
+.bkh img{height:44px;width:auto;flex:none}
+.bkh>div{flex:1}
+.bke{font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#D9CBB4}
+.bkh h2{font-size:30px;line-height:1.1}
+.bkx{background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;width:42px;height:42px;border-radius:50%;font-size:26px;line-height:1;cursor:pointer;flex:none}
+.bkx:hover{background:#fff;color:var(--navy)}
+.bkb{flex:1;overflow:auto;padding:22px 26px 26px;-webkit-overflow-scrolling:touch}
+.bkn{text-align:center;color:var(--navy2);font-size:15px;margin-bottom:16px}
+.bkn a{border-bottom:1px solid var(--copper)}
+.bkb .vgw{background:#fff;border:1px solid var(--line);border-radius:6px;padding:6px;min-height:420px}
+@media(max-width:640px){.bkm{padding:0}.bkp{height:100%;max-width:none;border-radius:0;border:0}.bkh{padding:14px 16px;gap:12px}.bkh img{display:none}.bkh h2{font-size:26px}.bkb{padding:16px 10px 20px}}
+/* option 1 type + headers */
+.eyebrow{font-size:13px;color:var(--navy)}
+.three h2,.app h2,.prog h2,.pri h2,.well2 h2,.inst h2,.rev h2,.prep h2{font-size:clamp(40px,4.8vw,62px)}
+.book h2{font-size:clamp(40px,4.8vw,62px)}
+h2 i{font-style:italic;font-weight:600}
+.rail figcaption{font-size:1.45rem;font-weight:600}
+.plan h3{font-size:25px}.plan .price{font-size:44px;font-weight:600}
+.rc blockquote{font-size:18px;line-height:1.6;font-weight:500}
+.icred{font-size:16px;font-weight:500}.ic h3{font-size:30px}
+.pi-close{font-size:22px;font-weight:500}
+.wo h4,.pt h4{font-weight:600;font-size:21px}
+.fq summary{font-weight:700}
+.bkh h2{font-size:26px}
+.three .n{font-weight:600}
+.rail .im.ph{display:flex;align-items:center;justify-content:center;background:#123d6e;border:1px dashed rgba(217,203,180,.6)}
+.rail .im.ph span{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#D9CBB4}
+.pvp{max-width:640px;height:auto;max-height:92vh}
+.pvf{background:none !important;padding:0 !important;border:0 !important}
+.pvf .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pvf .pills.two2{grid-template-columns:1fr 1fr}
+.err{color:#9B2C1F;font-size:14px;text-align:center;margin-top:12px}
+@media(max-width:640px){.pvf .two{grid-template-columns:1fr;gap:0}.pvp{max-height:none;height:100%}}
+.wbb{display:flex;flex-direction:column}.wbf{flex:1;width:100%;min-height:520px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.oprice{display:flex;gap:28px;flex-wrap:wrap;font-family:'Playfair Display',serif;font-weight:600;font-size:38px;line-height:1.1;margin:4px 0 12px}.oprice small{font-family:Lato,sans-serif;font-weight:400;font-size:14px;opacity:.75}.plan.well.open .alt{margin-bottom:0}
+.eyebrow{font-size:17px;font-weight:700;letter-spacing:.2em;color:var(--navy);gap:14px;margin-bottom:18px;line-height:1.4}
+.eyebrow:before,.eyebrow.c:after{width:48px;height:2px;flex:none}
+.eyebrow.lt{color:#F1E3CC}
+@media(max-width:640px){.eyebrow{font-size:15px;letter-spacing:.16em}.eyebrow:before,.eyebrow.c:after{width:32px}}
+/* section labels: large, line first */
+.eyebrow{font-size:21px;font-weight:700;letter-spacing:.16em;color:var(--navy);gap:18px;margin-bottom:20px;line-height:1.3;align-items:center}
+.eyebrow:before{content:"";width:56px;height:3px;background:var(--copper);border-radius:2px;flex:none}
+.eyebrow.c:after{content:"";width:56px;height:3px;background:var(--copper);border-radius:2px;flex:none}
+.eyebrow.lt{color:#fff}
+@media(max-width:640px){.eyebrow{font-size:17px;letter-spacing:.12em;gap:12px}.eyebrow:before,.eyebrow.c:after{width:36px}}
+/* PI section spacing on phones */
+@media(max-width:980px){.wrap.prog{padding-top:96px !important;padding-bottom:96px !important}}
+.rcar{max-width:860px;margin:0 auto}
+.rctl{display:flex;align-items:center;justify-content:center;gap:22px;margin-bottom:28px}
+.rarw{width:48px;height:48px;border-radius:50%;border:1px solid var(--navy);background:transparent;color:var(--navy);font-size:20px;cursor:pointer;line-height:1}
+.rarw:hover{background:var(--navy);color:#fff}
+.rdots{display:flex;gap:10px}
+.rdots button{width:11px;height:11px;border-radius:50%;border:1px solid var(--navy);background:transparent;padding:0;cursor:pointer}
+.rdots button.on{background:var(--copper);border-color:var(--copper)}
+.rstage .rc{display:none;margin:0;padding:44px 48px;text-align:center}
+.rstage .rc.on{display:block;animation:rfade .35s ease}
+.rstage .rc blockquote{font-size:21px;line-height:1.65}
+@keyframes rfade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.plan .btn.wbtn{white-space:normal;line-height:1.35;padding:12px 26px;text-align:center}
+@media(max-width:640px){.rstage .rc{padding:30px 22px}.rstage .rc blockquote{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.rstage .rc.on{animation:none}}
+.prog p.eyebrow{color:var(--navy);max-width:none}
+.wrap.three{display:block}.three>div{max-width:860px}
+.three p.eyebrow{color:var(--navy);max-width:none}@media(max-width:980px){.wrap.three{padding-top:90px !important;padding-bottom:90px !important}}
+/* === final spacing pass === */
+.wrap.three,.wrap.prog{padding-top:110px !important;padding-bottom:110px !important}
+.app,.pri,.inst,.prep,.book{padding-top:110px;padding-bottom:110px}
+.rev{padding:110px 32px}
+.wrap.three{display:grid !important;grid-template-columns:1fr 1fr;gap:72px;align-items:end}
+.three>div{max-width:none}
+.three h2{max-width:none;margin-bottom:0}
+.three .tcopy p{max-width:none;font-size:18px;margin-bottom:14px}.three .tcopy p:last-child{margin-bottom:0}
+.prog{gap:72px}
+.prog h2{font-size:clamp(34px,3.5vw,46px)}
+.prog p{max-width:none}
+.pi-close{margin-bottom:0 !important}
+.pgrid .plan h3{min-height:2.3em}
+.pri h2,.inst h2,.prep h2,.rev h2{margin-bottom:48px}
+.rctl{margin-bottom:24px}
+.fqh{margin:72px 0 16px}
+.paynote{margin-top:28px}
+footer{padding-bottom:0}
+@media(max-width:980px){
+ .wrap.three,.wrap.prog{padding-top:80px !important;padding-bottom:80px !important}
+ .app,.pri,.inst,.prep,.book{padding-top:80px;padding-bottom:80px}
+ .rev{padding:80px 24px}
+ .wrap.three{grid-template-columns:1fr;gap:24px}
+ .prog{gap:44px}
+ .pgrid .plan h3{min-height:0}
+ .pri h2,.inst h2,.prep h2,.rev h2{margin-bottom:36px}
+}
+.wrap.three{grid-template-columns:7fr 5fr}.three h2{font-size:clamp(36px,4vw,54px)}@media(max-width:980px){.wrap.three{grid-template-columns:1fr}}
+h2,h3{text-wrap:balance}
+.rail{max-width:1176px !important;padding:0 0 14px !important}
+.hint{max-width:1176px !important;padding:0 !important}
+@media(max-width:1260px){.rail{max-width:none !important;padding:0 32px 14px !important;scroll-padding-left:32px}.hint{padding:0 32px !important}}
+@media(max-width:980px){.rail{padding:0 24px 14px !important;scroll-padding-left:24px}.hint{padding:0 24px !important}}
+footer{padding:64px 0 40px}
+.fright{display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.soc{display:flex;gap:12px;flex-wrap:wrap}
+.soc a{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px;border:1px solid rgba(217,203,180,.55);border-radius:999px;color:#fff;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid rgba(217,203,180,.55) !important}
+.soc a:hover{background:#fff;color:var(--navy)}
+.book dd .soc{margin-top:6px}
+.copy{margin-top:36px}
+@media(max-width:980px){footer{padding:56px 0 130px}.fright{align-items:flex-start}}
+.mapsec{position:relative;height:460px;background:#02234A;border-top:2px solid var(--copper)}
+.mapsec iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+.mapcard{position:absolute;left:max(32px,calc((100vw - 1176px)/2));top:50%;transform:translateY(-50%);background:var(--paper);border-top:3px solid var(--copper);border-radius:6px;padding:30px 30px 32px;max-width:340px;box-shadow:0 24px 60px -24px rgba(3,29,62,.55)}
+.mapcard .mk{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);margin-bottom:10px}
+.mapcard .ma{font-family:'Playfair Display',serif;font-weight:600;font-size:26px;line-height:1.2;margin-bottom:10px}
+.mapcard .mn{font-size:15px;color:var(--navy2);margin-bottom:20px}
+@media(max-width:760px){.mapsec{height:auto;display:flex;flex-direction:column}.mapsec iframe{position:static;height:300px}.mapcard{position:static;transform:none;max-width:none;border-radius:0;box-shadow:none;padding:28px 24px 32px}.mapcard .btn{width:100%}}
+@media(min-width:761px){.mapcard{left:auto;right:max(32px,calc((100vw - 1176px)/2))}}
+/* alternating button colors */
+.btn.alt-b,.plan .btn.alt-b,.plan.dark .btn.alt-b,.plan.feat .btn.alt-b{background:var(--navy) !important;color:#fff !important;border:1px solid var(--copper) !important}
+.btn.alt-w,.plan .btn.alt-w,.plan.dark .btn.alt-w,.plan.feat .btn.alt-w{background:#fff !important;color:var(--navy) !important;border:1px solid var(--navy) !important}
+.plan.dark .btn.alt-b,.plan.feat .btn.alt-b{border-color:#fff !important}
+.btn.alt-b:hover{background:#0B3B75 !important}.btn.alt-w:hover{background:#F1E8DA !important}
+</style>
+<script>
+if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var s=document.createElement('script');s.src='https://identity.netlify.com/v1/netlify-identity-widget.js';s.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});netlifyIdentity.init();};document.head.appendChild(s);}
+</script>
+</head>
+<body>
+
+<header class="hero">
+ {{#each hero.slides}}<img class="slide" src="{{attr:image}}" alt="{{attr:alt}}" style="opacity:{{@op}}">
+ {{/each hero.slides}} <nav aria-label="Main"><div class="wrap">
+  <a href="#" class="nlogo" aria-label="Classical Pilates of Long Island, top of page"><img src="images/logo-white.png" alt="Classical Pilates of Long Island"></a>
+  <div class="links"><a href="#studio">The studio</a><a href="#sessions">Classes &amp; pricing</a><a href="#lynn">Instructors</a><a href="#book">Visit</a></div>
+  <a href="#schedule" class="btn btn-book">Book your first session</a>
+ </div></nav>
+ <div class="hcopy">
+  <div class="rule"></div>
+  <h1><img class="hlogo" src="images/logo-white.png" alt="Classical Pilates of Long Island"></h1>
+  <div class="rule"></div>
+  <p style="margin-top:30px">{{hero.tagline}}</p>
+  <div class="ctas"><a href="#schedule" class="btn btn-book">{{hero.button}}</a><a href="sms:{{tel:contact.phone}}" class="btn btn-ghost">Text {{contact.phone}}</a></div>
+ </div>
+ <div class="ctrl">
+  <button type="button" id="prev" aria-label="Previous photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  {{#each hero.slides}}<button type="button" class="dot{{@on}}" aria-label="Show photo {{@num}}"><span></span></button>
+  {{/each hero.slides}}  <button type="button" id="next" aria-label="Next photo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+ </div>
+</header>
+
+<main>
+<section class="wrap three">
+ <div>
+  <p class="eyebrow">{{intro.label}}</p>
+  <h2>{{intro.heading}}</h2>
+ </div>
+ <div class="tcopy">
+  {{#each intro.paragraphs}}<p>{{.}}</p>
+  {{/each intro.paragraphs}}
+ </div>
+</section>
+
+<section class="app" id="studio">
+ <div class="wrap ah">
+  <div><p class="eyebrow lt">{{studio.label}}</p><h2>{{studio.heading}}</h2></div>
+  <p>{{studio.intro}}</p>
+ </div>
+ <div class="rail">
+  {{#each studio.equipment}}<figure>{{#if image}}<div class="im"><img src="{{attr:image}}" alt="{{attr:alt}}"></div>{{/if image}}{{#unless image}}<div class="im ph"><span>Photo coming soon</span></div>{{/unless image}}<figcaption>{{name}}<span>{{caption}}</span></figcaption></figure>
+  {{/each studio.equipment}}
+ </div>
+ <p class="hint">{{studio.hint}}</p>
+</section>
+
+<section class="wrap prog" id="program">
+ <div>
+  <p class="eyebrow">{{program.label}}</p>
+  <h2>{{program.heading}}</h2>
+  <p><strong>{{program.lead}}</strong></p>
+  {{#each program.paragraphs}}<p>{{.}}</p>
+  {{/each program.paragraphs}}<p class="pi-close">{{program.closing}}</p>
+ </div>
+ <div class="tablet" aria-hidden="true"><div class="screen">
+  <div class="t">Today's session</div><div class="m">Reformer and wunda chair · 55 minutes</div>
+  <ol><li><span>The hundred</span><span class="done">Done</span></li><li><span>Footwork series</span><span class="done">Done</span></li><li><span>Short spine massage</span><span class="nx">Next</span></li><li><span>Wunda chair push down</span><span></span></li></ol>
+ </div></div>
+</section>
+
+<section class="pri" id="sessions"><div class="wrap">
+ <p class="eyebrow">{{pricing.label}}</p>
+ <h2>{{pricing.heading}}</h2>
+ <div class="pgrid">
+  {{#each pricing.cards}}<div class="{{attr:style}}"><div class="k">{{label}}</div><h3>{{name}}</h3><div class="price">{{price}}{{#if price_note}} <small>{{price_note}}</small>{{/if price_note}}</div><div class="alt">{{details}}</div><ul>{{#each bullets}}<li>{{.}}</li>{{/each bullets}}</ul><a href="{{attr:link}}" class="{{attr:button_class}}"{{#if kind}} data-kind="{{attr:kind}}"{{/if kind}}>{{button}}</a></div>
+  {{/each pricing.cards}}
+ </div>
+
+ <div class="plan well open"><div class="wl-l"><h3>{{pricing.open_studio.name}}</h3><div class="oprice">{{#each pricing.open_studio.prices}}<span>{{amount}} <small>{{note}}</small></span>{{/each pricing.open_studio.prices}}</div><div class="alt">{{pricing.open_studio.description}}</div></div>
+  <ul>{{#each pricing.open_studio.bullets}}<li>{{.}}</li>{{/each pricing.open_studio.bullets}}</ul></div>
+
+ <div class="plan well dark"><div class="wl-l"><div class="k">{{pricing.wellness.label}}</div><h3>{{pricing.wellness.name}}</h3><div class="alt">{{pricing.wellness.description}}</div></div>
+  <ul>{{#each pricing.wellness.bullets}}<li>{{.}}</li>{{/each pricing.wellness.bullets}}</ul>
+  <a href="#wellbook" class="btn btn-book wbtn alt-b">{{pricing.wellness.button}}</a></div>
+ <p class="paynote">{{pricing.note}}</p>
+</div></section>
+
+<section class="inst" id="lynn"><div class="wrap">
+ <p class="eyebrow">{{instructors.label}}</p>
+ <h2>{{instructors.heading}}</h2>
+ <div class="igrid">
+  {{#each instructors.people}}<article class="ic">
+   <div class="iph"><img src="{{attr:photo}}" alt="{{attr:photo_alt}}"{{#if photo_position}} style="object-position:{{attr:photo_position}}"{{/if photo_position}}></div>
+   <div>
+    <h3>{{name}}</h3>
+    <div class="irole">{{role}}</div>
+    <div class="icred">{{credentials}}</div>
+    {{#each bio}}<p>{{.}}</p>
+    {{/each bio}}<a href="{{attr:link}}" class="{{attr:button_class}}" id="{{attr:button_id}}">{{button}}</a>
+   </div>
+  </article>
+  {{/each instructors.people}}
+ </div>
+</div></section>
+
+<section class="rev" id="reviews"><div class="wrap">
+ <p class="eyebrow c">{{reviews.label}}</p>
+ <h2>{{reviews.heading}}</h2>
+ <div class="rcar" id="rcar" aria-roledescription="carousel" aria-label="Client reviews">
+  <div class="rctl"><button type="button" class="rarw" id="rprev" aria-label="Previous review">&#8592;</button><div class="rdots" id="rdots"></div><button type="button" class="rarw" id="rnext" aria-label="Next review">&#8594;</button></div>
+  <div class="rstage">
+   {{#each reviews.items}}<figure class="rc"><div class="stars" aria-label="Five stars">★★★★★</div><blockquote>“{{quote}}”</blockquote><figcaption>{{name}}</figcaption></figure>
+   {{/each reviews.items}}
+  </div>
+ </div>
+</div></section>
+
+<section class="prep" id="faq"><div class="wrap">
+ <p class="eyebrow">{{prepare.label}}</p>
+ <h2>{{prepare.heading}}</h2>
+ <div class="ptiles">
+   {{#each prepare.tiles}}<div class="pt"><h4>{{title}}</h4><p>{{text}}</p></div>
+   {{/each prepare.tiles}}
+ </div>
+ <h3 class="fqh">{{prepare.faq_heading}}</h3>
+ <div class="fqs">
+   {{#each prepare.faqs}}<details class="fq"><summary>{{question}}</summary><p>{{answer}}</p></details>
+   {{/each prepare.faqs}}
+ </div>
+</div></section>
+<section class="book" id="book"><div class="wrap bg">
+ <div>
+  <p class="eyebrow lt">{{visit.label}}</p>
+  <h2>{{visit.heading}}</h2>
+  <dl>
+   <div><dt>Studio</dt><dd>{{contact.street}}, {{contact.city}}. {{contact.directions}}</dd></div>
+   <div><dt>Text or call</dt><dd><a href="tel:{{tel:contact.phone}}">{{contact.phone}}</a></dd></div>
+   <div><dt>Email</dt><dd><a href="mailto:{{attr:contact.email}}">{{contact.email}}</a></dd></div>
+   <div><dt>Follow</dt><dd><div class="soc"><a href="{{attr:contact.instagram}}" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="{{attr:contact.tiktok}}" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.300 1.700 3.900 4 4.100v3.100c-1.500 0-2.800-.4-4-1.200v6.300c0 3.300-2.500 5.700-5.700 5.700S5 18.600 5 15.500c0-3.300 2.800-5.900 6.300-5.500v3.200c-1.600-.3-3.100.7-3.100 2.300 0 1.400 1.100 2.500 2.500 2.500s2.600-1 2.600-2.700V3h3.200z"/></svg><span>TikTok</span></a></div></dd></div>
+  </dl>
+ </div>
+ <form id="f" name="learn-more" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="learn-more"><p hidden><label>Leave empty <input name="bot-field"></label></p>
+  <div class="fields">
+   <h3>{{visit.form_heading}}</h3>
+   <p class="sub">{{visit.form_intro}}</p>
+   <label for="n">Name</label><input id="n" name="name" autocomplete="name" required>
+   <label for="c">Cell number</label><input id="c" name="cell" type="tel" autocomplete="tel" required>
+   <label id="tl">Best time of day</label>
+   <div class="pills" role="radiogroup" aria-labelledby="tl"><label><input type="radio" name="best-time" value="Morning" checked>Morning</label><label><input type="radio" name="best-time" value="Evening">Evening</label><label><input type="radio" name="best-time" value="Either">Either</label></div>
+   <label for="g">Main goal</label>
+   <select id="g" name="goal"><option>Build strength and core</option><option>Move better, safely</option><option>Learn the classical method</option><option>Wellness Pilates</option></select>
+   <button class="btn btn-book alt-w" type="submit">Send</button>
+   <p class="note">No commitment. Beginners welcome.</p>
+   <p class="err" hidden>Sorry, that didn't send. Please text {{contact.phone}} instead.</p>
+  </div>
+  <div class="ok"><div class="rule"></div><h3>Thank you</h3><p class="sub" style="margin-top:8px">We'll be in touch shortly.</p></div>
+ </form>
+</div></section>
+</main>
+
+<section class="mapsec" id="map" aria-label="Studio location">
+ <iframe title="Map to Classical Pilates of Long Island, {{attr:contact.street}}, {{attr:contact.city}}" src="https://www.google.com/maps?q={{q:contact.street}},+{{q:contact.city}}&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+ <div class="mapcard">
+  <p class="mk">{{visit.map_label}}</p>
+  <p class="ma">{{contact.street}}<br>{{contact.city}}</p>
+  <p class="mn">{{contact.directions}}</p>
+  <a class="btn btn-book alt-b" href="https://www.google.com/maps/dir/?api=1&amp;destination={{q:contact.street}},+{{q:contact.city}}" target="_blank" rel="noopener">Get directions</a>
+ </div>
+</section>
+<footer><div class="wrap">
+ <img src="images/logo-white.png" alt="Classical Pilates of Long Island">
+ <div class="fright"><div class="soc"><a href="{{attr:contact.instagram}}" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="{{attr:contact.tiktok}}" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.300 1.700 3.900 4 4.100v3.100c-1.500 0-2.800-.4-4-1.200v6.300c0 3.300-2.500 5.700-5.700 5.700S5 18.600 5 15.500c0-3.300 2.800-5.900 6.300-5.500v3.200c-1.600-.3-3.100.7-3.100 2.300 0 1.400 1.100 2.500 2.500 2.500s2.600-1 2.600-2.700V3h3.200z"/></svg><span>TikTok</span></a></div><div>{{contact.street}}, {{contact.city}} · <a href="tel:{{tel:contact.phone}}">{{contact.phone}}</a> · <a href="#schedule">Book online</a></div></div>
+</div><div class="copy">© 2026 Classical Pilates of Long Island</div></footer>
+
+<div class="sticky"><a class="btn btn-line" href="sms:{{tel:contact.phone}}">Text</a><a class="btn btn-book" href="#schedule">Book</a></div>
+
+<script>
+const s=[...document.querySelectorAll('.slide')],d=[...document.querySelectorAll('.dot')];let i=0,t;
+function go(n){i=(n+s.length)%s.length;s.forEach((e,k)=>e.style.opacity=k===i?1:0);d.forEach((e,k)=>e.classList.toggle('on',k===i));}
+function auto(){clearInterval(t);t=setInterval(()=>go(i+1),5500);}
+document.getElementById('prev').onclick=()=>{go(i-1);auto();};
+document.getElementById('next').onclick=()=>{go(i+1);auto();};
+d.forEach((e,k)=>e.onclick=()=>{go(k);auto();});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
+
+</script>
+
+<div class="bkm" id="private" role="dialog" aria-modal="true" aria-labelledby="pvt" aria-hidden="true">
+ <div class="bkp pvp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Classical Pilates of Long Island</p><h2 id="pvt">Request for a private</h2></div>
+   <button type="button" class="bkx" aria-label="Close request form">&times;</button>
+  </div>
+  <div class="bkb">
+   <form id="pf" class="pvf" name="private-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="private-request"><p hidden><label>Leave empty <input name="bot-field"></label></p>
+    <div class="fields">
+     <p class="sub">Tell us when you'd like to come in, and Lynn will be in touch to confirm.</p>
+     <label for="pk">Session</label>
+     <select id="pk" name="session"><option>Private session (50 min)</option><option>Mini private (30 min)</option></select>
+     <div class="two"><div><label for="pd">Preferred day</label><input id="pd" name="preferred-day" placeholder="e.g. Tuesday or Nov 18" required></div>
+     <div><label for="pt">Preferred time</label><input id="pt" name="preferred-time" placeholder="e.g. 10:00 AM" required></div></div>
+     <label id="pl">In studio or Zoom</label>
+     <div class="pills two2" role="radiogroup" aria-labelledby="pl"><label><input type="radio" name="location" value="In studio" checked>In studio</label><label><input type="radio" name="location" value="Zoom">Zoom</label></div>
+     <div class="two"><div><label for="pn">Name</label><input id="pn" name="name" autocomplete="name" required></div>
+     <div><label for="pc">Cell number</label><input id="pc" name="cell" type="tel" autocomplete="tel" required></div></div>
+     <button class="btn btn-book" type="submit">Request private</button>
+     <p class="err" hidden>Sorry, that didn't send. Please text {{contact.phone}} instead.</p>
+    </div>
+    <div class="ok"><div class="rule"></div><h3>Request sent</h3><p class="sub" style="margin-top:8px">Lynn will be in touch to confirm your private.</p></div>
+   </form>
+  </div>
+ </div>
+</div>
+<div class="bkm" id="wellbook" role="dialog" aria-modal="true" aria-labelledby="wbt" aria-hidden="true">
+ <div class="bkp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Wellness Pilates with Jen Ward</p><h2 id="wbt">Book a wellness session</h2></div>
+   <button type="button" class="bkx" aria-label="Close booking">&times;</button>
+  </div>
+  <div class="bkb wbb">
+   <p class="bkn">Choose a session from Jen's availability. Questions? Text Jen at <a href="sms:+19177015678">917.701.5678</a>.</p>
+   <iframe class="wbf" title="Book a wellness session with Jen" data-src="wellness-booking.html"></iframe>
+  </div>
+ </div>
+</div>
+<div class="bkm" id="schedule" role="dialog" aria-modal="true" aria-labelledby="bkt" aria-hidden="true">
+ <div class="bkp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Classical Pilates of Long Island</p><h2 id="bkt">Book your session</h2></div>
+   <button type="button" class="bkx" aria-label="Close booking">&times;</button>
+  </div>
+  <div class="bkb">
+   <p class="bkn">Choose a session and a time that works for you. Prefer to talk first? Call or text <a href="tel:{{tel:contact.phone}}">{{contact.phone}}</a>.</p>
+   <div class="vgw">
+<div id='frameTitle' class='embedded-widget-title' style='font-size: 23px; color: #333;font-family:Arial, Helvetica, sans-serif; line-height:24px; padding: 18px 10px 8px; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;'>Book Now</div>
+<div class="vagaro" style="width:250px; padding:0; border:0; margin:0 auto; text-align:center;"><style>.vagaro a {font-size:14px; color:#AAA; text-decoration:none;}.plan.dark{background:var(--navy);color:#fff;border-color:var(--copper)}
+.plan.dark li{border-color:rgba(255,255,255,.2)}
+.plan.dark .btn-book{background:#fff;color:var(--navy)}
+.plan.dark .btn-line{border-color:#fff;color:#fff}
+.plan.dark .btn-line:hover{background:#fff;color:var(--navy)}
+.ic .ibtn{width:auto;margin-top:18px;padding:12px 24px;font-size:12px;letter-spacing:.12em;white-space:normal;line-height:1.35;text-align:center}
+@media(max-width:640px){.ic .ibtn{width:100%}}
+</style><a href="https://www.vagaro.com/pro/">Powered by Vagaro</a>&nbsp;<a href="https://www.vagaro.com/pro/salon-software">Salon Software</a>,&nbsp;<a href="https://www.vagaro.com/pro/spa-software">Spa Software</a>&nbsp;&amp;&nbsp;<a href="https://www.vagaro.com/pro/fitness-software">Fitness Software</a><script type="text/javascript" defer src="https://www.vagaro.com//resources/WidgetEmbeddedLoader/OZqpD3KuDZGcT3qsV3avV34mC2PeFJ4mC30m9cyUeJUtjP0dDxkJEvwRapWUep2sERAJDXwQ4pcUbfYJExcUc9gOcPiS0?v=TQaQUb0l5zJ9lZIJRyldZbzOfjqNFGzNHnz9DkBoyUFe#"></script></div>
+</div>
+  </div>
+ </div>
+</div>
+<script>
+(function(){var last=null;
+function open(m){var fr=m.querySelector('iframe[data-src]');if(fr&&!fr.src)fr.src=fr.dataset.src;last=document.activeElement;m.classList.add('on');m.setAttribute('aria-hidden','false');document.documentElement.style.overflow='hidden';m.querySelector('.bkx').focus();}
+function close(m){m.classList.remove('on');m.setAttribute('aria-hidden','true');document.documentElement.style.overflow='';if(last)last.focus();}
+document.querySelectorAll('.bkm').forEach(function(m){
+ document.querySelectorAll('a[href="#'+m.id+'"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+  if(a.dataset.kind){var k=document.getElementById('pk');if(k)k.value=a.dataset.kind;}open(m);});});
+ m.querySelector('.bkx').addEventListener('click',function(){close(m);});
+ m.addEventListener('click',function(e){if(e.target===m)close(m);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){var m=document.querySelector('.bkm.on');if(m)close(m);}});
+['f','pf'].forEach(function(id){var f=document.getElementById(id);if(!f)return;
+ f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button[type=submit]'),er=f.querySelector('.err');b.disabled=true;
+  fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()})
+  .then(function(r){if(!r.ok)throw 0;f.querySelector('.fields').style.display='none';f.querySelector('.ok').style.display='block';})
+  .catch(function(){b.disabled=false;if(er)er.hidden=false;});});});
+})();
+</script>
+
+<script>
+(function(){var c=document.getElementById('rcar');if(!c)return;var cs=[].slice.call(c.querySelectorAll('.rc')),d=document.getElementById('rdots'),i=0;
+cs.forEach(function(_,k){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Show review '+(k+1));b.onclick=function(){go(k)};d.appendChild(b);});
+function go(n){i=(n+cs.length)%cs.length;cs.forEach(function(e,k){e.classList.toggle('on',k===i)});[].forEach.call(d.children,function(e,k){e.classList.toggle('on',k===i)});}
+document.getElementById('rprev').onclick=function(){go(i-1)};document.getElementById('rnext').onclick=function(){go(i+1)};
+var x0=null;c.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+c.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>45)go(i+(dx<0?1:-1));x0=null},{passive:true});
+go(0);})();
+</script>
+</body>
+</html>

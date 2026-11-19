@@ -1,0 +1,644 @@
+# Decap CMS configuration (JSON is valid YAML)
+{
+  "backend": {
+    "name": "git-gateway",
+    "branch": "main",
+    "commit_messages": {
+      "update": "Website edit: {{slug}}"
+    }
+  },
+  "site_url": "https://classical-pilates-li-v2.netlify.app",
+  "display_url": "https://classical-pilates-li-v2.netlify.app",
+  "locale": "en",
+  "media_folder": "images/uploads",
+  "public_folder": "/images/uploads",
+  "collections": [
+    {
+      "name": "website",
+      "label": "Website",
+      "editor": {
+        "preview": false
+      },
+      "files": [
+        {
+          "name": "home",
+          "label": "Home page",
+          "file": "content/site.json",
+          "format": "json",
+          "fields": [
+            {
+              "name": "hero",
+              "label": "1. Top of page (photo slideshow)",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "tagline",
+                  "label": "Short line under the logo",
+                  "widget": "text"
+                },
+                {
+                  "name": "button",
+                  "label": "Main button text",
+                  "widget": "string"
+                },
+                {
+                  "name": "slides",
+                  "label": "Slideshow photos",
+                  "widget": "list",
+                  "summary": "{{fields.alt}}",
+                  "fields": [
+                    {
+                      "name": "image",
+                      "label": "Photo",
+                      "widget": "image",
+                      "hint": "Wide (landscape) photos work best."
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Short description of the photo",
+                      "widget": "string",
+                      "hint": "Helps visually impaired visitors and Google."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "intro",
+              "label": "2. Small by design",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "Paragraphs",
+                  "widget": "list",
+                  "field": {
+                    "name": "text",
+                    "label": "Paragraph",
+                    "widget": "text"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "studio",
+              "label": "3. The studio (equipment photos)",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "intro",
+                  "label": "Intro text",
+                  "widget": "text"
+                },
+                {
+                  "name": "equipment",
+                  "label": "Equipment",
+                  "widget": "list",
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "caption",
+                      "label": "Short caption",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "image",
+                      "label": "Photo",
+                      "widget": "image",
+                      "required": false,
+                      "hint": "Leave empty to show \"Photo coming soon\". Upright (portrait) photos work best."
+                    },
+                    {
+                      "name": "alt",
+                      "label": "Short description of the photo",
+                      "widget": "string",
+                      "required": false
+                    }
+                  ]
+                },
+                {
+                  "name": "hint",
+                  "label": "Swipe hint text",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "program",
+              "label": "4. Pilates Intelligence Program",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "lead",
+                  "label": "Bold opening line",
+                  "widget": "text"
+                },
+                {
+                  "name": "paragraphs",
+                  "label": "Paragraphs",
+                  "widget": "list",
+                  "field": {
+                    "name": "text",
+                    "label": "Paragraph",
+                    "widget": "text"
+                  }
+                },
+                {
+                  "name": "closing",
+                  "label": "Closing line (italic)",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "pricing",
+              "label": "5. Classes & pricing",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string",
+                  "hint": "Put *stars* around a word to show it in copper italics."
+                },
+                {
+                  "name": "cards",
+                  "label": "Pricing cards",
+                  "widget": "list",
+                  "allow_add": false,
+                  "allow_remove": false,
+                  "allow_reorder": false,
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Small label above the name",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "name",
+                      "label": "Class name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "price",
+                      "label": "Price",
+                      "widget": "string",
+                      "hint": "Example: $150"
+                    },
+                    {
+                      "name": "price_note",
+                      "label": "Small text next to the price",
+                      "widget": "string",
+                      "hint": "Example: / 4 classes",
+                      "required": false
+                    },
+                    {
+                      "name": "details",
+                      "label": "Line under the price",
+                      "widget": "string",
+                      "required": false
+                    },
+                    {
+                      "name": "bullets",
+                      "label": "Bullet points",
+                      "widget": "list",
+                      "field": {
+                        "name": "text",
+                        "label": "Bullet",
+                        "widget": "text"
+                      }
+                    },
+                    {
+                      "name": "button",
+                      "label": "Button text",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "style",
+                      "label": "style",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "link",
+                      "label": "link",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "button_class",
+                      "label": "button_class",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "kind",
+                      "label": "kind",
+                      "widget": "hidden"
+                    }
+                  ]
+                },
+                {
+                  "name": "open_studio",
+                  "label": "Open-Studio Session box",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "prices",
+                      "label": "Prices",
+                      "widget": "list",
+                      "summary": "{{fields.amount}} {{fields.note}}",
+                      "fields": [
+                        {
+                          "name": "amount",
+                          "label": "Price",
+                          "widget": "string"
+                        },
+                        {
+                          "name": "note",
+                          "label": "Small text",
+                          "widget": "string",
+                          "required": false
+                        }
+                      ]
+                    },
+                    {
+                      "name": "description",
+                      "label": "Description",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "bullets",
+                      "label": "Bullet points",
+                      "widget": "list",
+                      "field": {
+                        "name": "text",
+                        "label": "Bullet",
+                        "widget": "text"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "wellness",
+                  "label": "Wellness Pilates box",
+                  "widget": "object",
+                  "fields": [
+                    {
+                      "name": "label",
+                      "label": "Small label",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "name",
+                      "label": "Name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "description",
+                      "label": "Description",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "bullets",
+                      "label": "Bullet points",
+                      "widget": "list",
+                      "field": {
+                        "name": "text",
+                        "label": "Bullet",
+                        "widget": "text"
+                      }
+                    },
+                    {
+                      "name": "button",
+                      "label": "Button text",
+                      "widget": "string"
+                    }
+                  ]
+                },
+                {
+                  "name": "note",
+                  "label": "Payment note under the cards",
+                  "widget": "text"
+                }
+              ]
+            },
+            {
+              "name": "instructors",
+              "label": "6. Instructors",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "people",
+                  "label": "Instructors",
+                  "widget": "list",
+                  "allow_add": false,
+                  "allow_remove": false,
+                  "summary": "{{fields.name}}",
+                  "fields": [
+                    {
+                      "name": "name",
+                      "label": "Name",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "role",
+                      "label": "Role",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "credentials",
+                      "label": "Credentials",
+                      "widget": "text"
+                    },
+                    {
+                      "name": "bio",
+                      "label": "Bio paragraphs",
+                      "widget": "list",
+                      "field": {
+                        "name": "text",
+                        "label": "Paragraph",
+                        "widget": "text"
+                      }
+                    },
+                    {
+                      "name": "photo",
+                      "label": "Photo",
+                      "widget": "image",
+                      "hint": "A square headshot works best."
+                    },
+                    {
+                      "name": "photo_alt",
+                      "label": "Short description of the photo",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "button",
+                      "label": "Button text",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "photo_position",
+                      "label": "photo_position",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "link",
+                      "label": "link",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "button_class",
+                      "label": "button_class",
+                      "widget": "hidden"
+                    },
+                    {
+                      "name": "button_id",
+                      "label": "button_id",
+                      "widget": "hidden"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "reviews",
+              "label": "7. Client reviews",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string",
+                  "hint": "Put *stars* around a word to show it in copper italics."
+                },
+                {
+                  "name": "items",
+                  "label": "Reviews",
+                  "widget": "list",
+                  "summary": "{{fields.quote}}",
+                  "fields": [
+                    {
+                      "name": "quote",
+                      "label": "Review",
+                      "widget": "text",
+                      "hint": "No quotation marks needed, they are added for you."
+                    },
+                    {
+                      "name": "name",
+                      "label": "Name shown under the review",
+                      "widget": "string"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "prepare",
+              "label": "8. What to bring & questions",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string",
+                  "hint": "Put *stars* around a word to show it in copper italics."
+                },
+                {
+                  "name": "tiles",
+                  "label": "What to bring",
+                  "widget": "list",
+                  "summary": "{{fields.title}}",
+                  "fields": [
+                    {
+                      "name": "title",
+                      "label": "Title",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "text",
+                      "label": "Text",
+                      "widget": "text"
+                    }
+                  ]
+                },
+                {
+                  "name": "faq_heading",
+                  "label": "Questions headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "faqs",
+                  "label": "Questions",
+                  "widget": "list",
+                  "summary": "{{fields.question}}",
+                  "fields": [
+                    {
+                      "name": "question",
+                      "label": "Question",
+                      "widget": "string"
+                    },
+                    {
+                      "name": "answer",
+                      "label": "Answer",
+                      "widget": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "visit",
+              "label": "9. Visit, form & map",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string"
+                },
+                {
+                  "name": "heading",
+                  "label": "Headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "form_heading",
+                  "label": "Form headline",
+                  "widget": "string"
+                },
+                {
+                  "name": "form_intro",
+                  "label": "Form intro line",
+                  "widget": "string"
+                },
+                {
+                  "name": "map_label",
+                  "label": "Map card label",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "contact",
+              "label": "10. Contact details (used everywhere on the site)",
+              "widget": "object",
+              "collapsed": true,
+              "fields": [
+                {
+                  "name": "phone",
+                  "label": "Phone number",
+                  "widget": "string",
+                  "hint": "Shown on the site and used for the Text and Call buttons."
+                },
+                {
+                  "name": "email",
+                  "label": "Email address",
+                  "widget": "string"
+                },
+                {
+                  "name": "street",
+                  "label": "Street address",
+                  "widget": "string"
+                },
+                {
+                  "name": "city",
+                  "label": "Town, state and ZIP",
+                  "widget": "string"
+                },
+                {
+                  "name": "directions",
+                  "label": "Directions note",
+                  "widget": "text"
+                },
+                {
+                  "name": "instagram",
+                  "label": "Instagram link",
+                  "widget": "string"
+                },
+                {
+                  "name": "tiktok",
+                  "label": "TikTok link",
+                  "widget": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
