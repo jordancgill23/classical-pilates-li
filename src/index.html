@@ -368,6 +368,22 @@ footer{padding:64px 0 40px}
 .btn.alt-b:hover{background:#0B3B75 !important}.btn.alt-w:hover{background:#F1E8DA !important}
 .plan.well.open .obtn{flex:none;width:auto;padding:0 30px;white-space:nowrap}@media(max-width:900px){.plan.well.open .obtn{width:100%}}
 @media(min-width:641px){.ic .ibtn{white-space:nowrap;letter-spacing:.1em}}
+/* alternating blocks: white / blue */
+.ic{background:#fff}
+.igrid .ic:nth-child(even){background:var(--navy);border-color:var(--navy);color:#fff}
+.igrid .ic:nth-child(even) h3,.igrid .ic:nth-child(even) p,.igrid .ic:nth-child(even) .icred{color:#fff}
+.igrid .ic:nth-child(even) .irole{color:#E3A766}
+.igrid .ic:nth-child(even) .iph{border-color:#E3A766}
+.rstage .rc{background:#fff}
+.rstage .rc:nth-child(even){background:var(--navy);border-color:var(--navy)}
+.rstage .rc:nth-child(even) blockquote{color:#fff}
+.rstage .rc:nth-child(even) figcaption{color:#D9CBB4}
+.rstage .rc:nth-child(even) .stars{color:#E3A766}
+.ptiles{gap:18px}
+.pt{background:#fff;border:1px solid var(--line);border-top:3px solid var(--copper);border-radius:6px;padding:24px 22px 26px}
+.ptiles .pt:nth-child(even){background:var(--navy);border-color:var(--navy);border-top-color:var(--copper)}
+.ptiles .pt:nth-child(even) h4,.ptiles .pt:nth-child(even) p{color:#fff}
+.ptiles .pt:nth-child(even) p{opacity:.9}
 </style>
 <script>
 if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var s=document.createElement('script');s.src='https://identity.netlify.com/v1/netlify-identity-widget.js';s.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});netlifyIdentity.init();};document.head.appendChild(s);}
