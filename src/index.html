@@ -390,7 +390,7 @@ footer{padding:64px 0 40px}
 .pt{background:#fff;border:1px solid var(--line);border-top:3px solid var(--copper);border-radius:6px;padding:24px 22px 26px}
 </style>
 <script>
-if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var s=document.createElement('script');s.src='https://identity.netlify.com/v1/netlify-identity-widget.js';s.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});netlifyIdentity.init();};document.head.appendChild(s);}
+(function(){if(!/(invite|recovery|confirmation|email_change)_token=/.test(location.hash))return;var el=document.createElement('script');el.src='https://identity.netlify.com/v1/netlify-identity-widget.js';el.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});netlifyIdentity.init();};document.head.appendChild(el);})();
 </script>
 </head>
 <body>
