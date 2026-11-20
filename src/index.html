@@ -464,7 +464,7 @@ if(/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)){var
 
  <div class="plan well open"><div class="wl-l"><h3>{{pricing.open_studio.name}}</h3><div class="oprice">{{#each pricing.open_studio.prices}}<span>{{amount}} <small>{{note}}</small></span>{{/each pricing.open_studio.prices}}</div><div class="alt">{{pricing.open_studio.description}}</div></div>
   <ul>{{#each pricing.open_studio.bullets}}<li>{{.}}</li>{{/each pricing.open_studio.bullets}}</ul>{{#if pricing.open_studio.button}}
-  <a href="#schedule" class="btn btn-book obtn alt-b">{{pricing.open_studio.button}}</a>{{/if pricing.open_studio.button}}</div>
+  <a href="#osbook" class="btn btn-book obtn alt-b">{{pricing.open_studio.button}}</a>{{/if pricing.open_studio.button}}</div>
 
  <div class="plan well dark"><div class="wl-l"><div class="k">{{pricing.wellness.label}}</div><h3>{{pricing.wellness.name}}</h3><div class="alt">{{pricing.wellness.description}}</div></div>
   <ul>{{#each pricing.wellness.bullets}}<li>{{.}}</li>{{/each pricing.wellness.bullets}}</ul>
@@ -623,6 +623,45 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
   <div class="bkb wbb">
    <p class="bkn">See all of Jen's sessions and workshops. Questions? Text Jen at <a href="sms:+19177015678">917.701.5678</a>.</p>
    <iframe class="wbf" title="Wellness services with Jen Ward" data-src="booking-jen-all.html"></iframe>
+  </div>
+ </div>
+</div>
+<div class="bkm" id="lynnbook" role="dialog" aria-modal="true" aria-labelledby="lbt" aria-hidden="true">
+ <div class="bkp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Classical Pilates of Long Island</p><h2 id="lbt">Train with Lynn</h2></div>
+   <button type="button" class="bkx" aria-label="Close booking">&times;</button>
+  </div>
+  <div class="bkb wbb">
+   <p class="bkn">Choose a session with Lynn and a time that works for you. Prefer to talk first? Call or text <a href="tel:+16318808917">631.880.8917</a>.</p>
+   <iframe class="wbf" title="Book a session with Lynn" data-src="booking-lynn.html"></iframe>
+  </div>
+ </div>
+</div>
+<div class="bkm" id="osbook" role="dialog" aria-modal="true" aria-labelledby="obt" aria-hidden="true">
+ <div class="bkp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Classical Pilates of Long Island</p><h2 id="obt">Book Open Studio</h2></div>
+   <button type="button" class="bkx" aria-label="Close booking">&times;</button>
+  </div>
+  <div class="bkb wbb">
+   <p class="bkn">Pick an Open Studio time that works for you. Questions? Call or text <a href="tel:+16318808917">631.880.8917</a>.</p>
+   <iframe class="wbf" title="Book Open Studio" data-src="booking-open-studio.html"></iframe>
+  </div>
+ </div>
+</div>
+<div class="bkm" id="classbook" role="dialog" aria-modal="true" aria-labelledby="cbt" aria-hidden="true">
+ <div class="bkp">
+  <div class="bkh">
+   <img src="images/logo-white.png" alt="">
+   <div><p class="bke">Classical Pilates of Long Island</p><h2 id="cbt">Book a group class</h2></div>
+   <button type="button" class="bkx" aria-label="Close booking">&times;</button>
+  </div>
+  <div class="bkb wbb">
+   <p class="bkn">Pick a class time that works for you. Max 3 clients per class. Questions? Call or text <a href="tel:+16318808917">631.880.8917</a>.</p>
+   <iframe class="wbf" title="Book a group class" data-src="booking-group-class.html"></iframe>
   </div>
  </div>
 </div>
