@@ -14,7 +14,7 @@
       "photo_alt": "Lynn Melfi, owner and instructor",
       "photo_position": "38% 30%",
       "button": "Train with Lynn",
-      "link": "#schedule",
+      "link": "#classbook",
       "button_class": "btn btn-book ibtn alt-b",
       "button_id": "train-lynn"
     },
@@ -30,7 +30,7 @@
       "photo_alt": "Jen Ward, Wellness Pilates instructor",
       "photo_position": "",
       "button": "See all Wellness Services with Jen",
-      "link": "#wellbook",
+      "link": "#jenall",
       "button_class": "btn btn-book ibtn alt-w",
       "button_id": "jen-wellness"
     }
