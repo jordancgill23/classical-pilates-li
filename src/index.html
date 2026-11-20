@@ -388,7 +388,7 @@ footer{padding:64px 0 40px}
 .rstage .rc:nth-child(even) .stars{color:#E3A766}
 .ptiles{gap:18px}
 .pt{background:#fff;border:1px solid var(--line);border-top:3px solid var(--copper);border-radius:6px;padding:24px 22px 26px}
-</style>
+/* Lynn text style presets */section.tc-navy :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#032D5F!important}section.hc-navy :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#032D5F!important}section.tc-copper :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#8A4F1C!important}section.hc-copper :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#8A4F1C!important}section.tc-charcoal :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#2B2B2B!important}section.hc-charcoal :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#2B2B2B!important}section.tc-black :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#000!important}section.hc-black :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#000!important}section.tc-white :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#fff!important}section.hc-white :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#fff!important}section.tc-cream :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#E3D2B8!important}section.hc-cream :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#E3D2B8!important}section.tc-gold :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){color:#E0A86A!important}section.hc-gold :is(h2,h3):not(.dark *):not(.feat *):not(form *){color:#E0A86A!important}section.ts-large :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){zoom:1.12}section.ts-xl :is(p,li,dd,blockquote,figcaption span):not(.eyebrow):not(.k):not(.note):not(.err):not(.dark *):not(.feat *):not(form *){zoom:1.25}</style>
 <script>
 (function(){if(!/(invite|recovery|confirmation|email_change)_token=/.test(location.hash))return;var el=document.createElement('script');el.src='https://identity.netlify.com/v1/netlify-identity-widget.js';el.onload=function(){netlifyIdentity.on('login',function(){location.href='/admin/';});};document.head.appendChild(el);})();
 </script>
@@ -417,7 +417,7 @@ footer{padding:64px 0 40px}
 </header>
 
 <main>
-<section class="wrap three">
+<section class="wrap three ts-{{attr:intro.look.text_size}} tc-{{attr:intro.look.text_color}} hc-{{attr:intro.look.heading_color}}">
  <div>
   <p class="eyebrow">{{intro.label}}</p>
   <h2>{{intro.heading}}</h2>
@@ -428,7 +428,7 @@ footer{padding:64px 0 40px}
  </div>
 </section>
 
-<section class="app" id="studio">
+<section class="app ts-{{attr:studio.look.text_size}} tc-{{attr:studio.look.text_color}} hc-{{attr:studio.look.heading_color}}" id="studio">
  <div class="wrap ah">
   <div><p class="eyebrow lt">{{studio.label}}</p><h2>{{studio.heading}}</h2></div>
   <p>{{studio.intro}}</p>
@@ -440,7 +440,7 @@ footer{padding:64px 0 40px}
  <p class="hint">{{studio.hint}}</p>
 </section>
 
-<section class="wrap prog" id="program">
+<section class="wrap prog ts-{{attr:program.look.text_size}} tc-{{attr:program.look.text_color}} hc-{{attr:program.look.heading_color}}" id="program">
  <div>
   <p class="eyebrow">{{program.label}}</p>
   <h2>{{program.heading}}</h2>
@@ -454,7 +454,7 @@ footer{padding:64px 0 40px}
  </div></div>
 </section>
 
-<section class="pri" id="sessions"><div class="wrap">
+<section class="pri ts-{{attr:pricing.look.text_size}} tc-{{attr:pricing.look.text_color}} hc-{{attr:pricing.look.heading_color}}" id="sessions"><div class="wrap">
  <p class="eyebrow">{{pricing.label}}</p>
  <h2>{{pricing.heading}}</h2>
  <div class="pgrid">
@@ -472,7 +472,7 @@ footer{padding:64px 0 40px}
  <p class="paynote">{{pricing.note}}</p>
 </div></section>
 
-<section class="inst" id="lynn"><div class="wrap">
+<section class="inst ts-{{attr:instructors.look.text_size}} tc-{{attr:instructors.look.text_color}} hc-{{attr:instructors.look.heading_color}}" id="lynn"><div class="wrap">
  <p class="eyebrow">{{instructors.label}}</p>
  <h2>{{instructors.heading}}</h2>
  <div class="igrid">
@@ -490,7 +490,7 @@ footer{padding:64px 0 40px}
  </div>
 </div></section>
 
-<section class="rev" id="reviews"><div class="wrap">
+<section class="rev ts-{{attr:reviews.look.text_size}} tc-{{attr:reviews.look.text_color}} hc-{{attr:reviews.look.heading_color}}" id="reviews"><div class="wrap">
  <p class="eyebrow c">{{reviews.label}}</p>
  <h2>{{reviews.heading}}</h2>
  <div class="rcar" id="rcar" aria-roledescription="carousel" aria-label="Client reviews">
@@ -502,7 +502,7 @@ footer{padding:64px 0 40px}
  </div>
 </div></section>
 
-<section class="prep" id="faq"><div class="wrap">
+<section class="prep ts-{{attr:prepare.look.text_size}} tc-{{attr:prepare.look.text_color}} hc-{{attr:prepare.look.heading_color}}" id="faq"><div class="wrap">
  <p class="eyebrow">{{prepare.label}}</p>
  <h2>{{prepare.heading}}</h2>
  <div class="ptiles">
@@ -515,7 +515,7 @@ footer{padding:64px 0 40px}
    {{/each prepare.faqs}}
  </div>
 </div></section>
-<section class="book" id="book"><div class="wrap bg">
+<section class="book ts-{{attr:visit.look.text_size}} tc-{{attr:visit.look.text_color}} hc-{{attr:visit.look.heading_color}}" id="book"><div class="wrap bg">
  <div>
   <p class="eyebrow lt">{{visit.label}}</p>
   <h2>{{visit.heading}}</h2>

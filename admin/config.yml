@@ -83,6 +83,98 @@
                 "label": "Paragraph",
                 "widget": "text"
               }
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -142,6 +234,90 @@
               "name": "hint",
               "label": "Swipe hint text",
               "widget": "string"
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "White",
+                      "value": "white"
+                    },
+                    {
+                      "label": "Cream",
+                      "value": "cream"
+                    },
+                    {
+                      "label": "Gold",
+                      "value": "gold"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "White",
+                      "value": "white"
+                    },
+                    {
+                      "label": "Cream",
+                      "value": "cream"
+                    },
+                    {
+                      "label": "Gold",
+                      "value": "gold"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -180,6 +356,98 @@
               "name": "closing",
               "label": "Closing line (italic)",
               "widget": "text"
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -371,6 +639,98 @@
               "name": "note",
               "label": "Payment note under the cards",
               "widget": "text"
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -461,6 +821,98 @@
                 }
               ],
               "collapsed": false
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -497,6 +949,98 @@
                   "name": "name",
                   "label": "Name shown under the review",
                   "widget": "string"
+                }
+              ]
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
                 }
               ]
             }
@@ -559,6 +1103,98 @@
                   "widget": "text"
                 }
               ]
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Navy blue",
+                      "value": "navy"
+                    },
+                    {
+                      "label": "Copper",
+                      "value": "copper"
+                    },
+                    {
+                      "label": "Charcoal",
+                      "value": "charcoal"
+                    },
+                    {
+                      "label": "Black",
+                      "value": "black"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -592,6 +1228,90 @@
               "name": "map_label",
               "label": "Map card label",
               "widget": "string"
+            },
+            {
+              "name": "look",
+              "label": "Text style (optional)",
+              "widget": "object",
+              "required": false,
+              "collapsed": true,
+              "summary": "Size and color for this section",
+              "fields": [
+                {
+                  "name": "text_size",
+                  "label": "Text size",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Makes the paragraph text in this section bigger.",
+                  "options": [
+                    {
+                      "label": "Normal",
+                      "value": "default"
+                    },
+                    {
+                      "label": "Large",
+                      "value": "large"
+                    },
+                    {
+                      "label": "Extra large",
+                      "value": "xl"
+                    }
+                  ]
+                },
+                {
+                  "name": "heading_color",
+                  "label": "Heading color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the headings in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "White",
+                      "value": "white"
+                    },
+                    {
+                      "label": "Cream",
+                      "value": "cream"
+                    },
+                    {
+                      "label": "Gold",
+                      "value": "gold"
+                    }
+                  ]
+                },
+                {
+                  "name": "text_color",
+                  "label": "Text color",
+                  "widget": "select",
+                  "required": false,
+                  "default": "default",
+                  "hint": "Color of the paragraph text in this section.",
+                  "options": [
+                    {
+                      "label": "Default",
+                      "value": "default"
+                    },
+                    {
+                      "label": "White",
+                      "value": "white"
+                    },
+                    {
+                      "label": "Cream",
+                      "value": "cream"
+                    },
+                    {
+                      "label": "Gold",
+                      "value": "gold"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
