@@ -20,11 +20,11 @@
       "link": "#schedule"
     },
     {
-      "details": "Max 3 clients per class",
-      "price_note": "/ 4 classes",
+      "details": "Max 3 clients per session",
+      "price_note": "/ 4 sessions",
       "price": "$150",
       "button_class": "btn btn-book alt-w",
-      "name": "Classical Pilates Open-Level Group Session",
+      "name": "Classical Pilates Open-Level Group Sessions",
       "style": "plan feat",
       "bullets": [
         "50 minutes",
@@ -62,7 +62,7 @@
       "bullets": [
         "Entire Classical Pilates studio to yourself with focused one-on-one work ",
         "Cost-efficient & great for busy schedules",
-        "Perfect add-on to group classes"
+        "Perfect add-on to group session"
       ],
       "button": "Request private",
       "label": "Focused & Efficient",
