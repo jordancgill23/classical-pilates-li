@@ -92,13 +92,16 @@
   },
   "mentoring": {
     "show": true,
-    "label": "For Pilates professionals",
+    "label": "Pilates Teacher Mentorship",
     "name": "Mentoring Session",
     "price": "",
     "price_note": "",
-    "description": "Lynn will add the description for this session.",
-    "bullets": [],
-    "button": "Request a mentoring session"
+    "description": "Take your teaching beyond certification.",
+    "bullets": [
+      "Designed for Pilates professionals who want to deepen their understanding of the Classical Pilates Method, strengthen their personal practice, and teach with greater confidence and clarity.",
+      "Mentorship sessions provide individualized guidance, hands-on support, and dedicated open-studio time to explore and refine your practice on all apparatus."
+    ],
+    "button": "Request a Mentoring Session"
   },
   "wellness": {
     "label": "Wellness Pilates Sessions & Workshops with Jen",
