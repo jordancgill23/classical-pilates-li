@@ -599,6 +599,68 @@
               ]
             },
             {
+              "name": "mentoring",
+              "label": "Mentoring Session box (Pilates professionals)",
+              "widget": "object",
+              "collapsed": false,
+              "fields": [
+                {
+                  "name": "show",
+                  "label": "Show this box on the website",
+                  "widget": "boolean",
+                  "default": true,
+                  "required": false
+                },
+                {
+                  "name": "label",
+                  "label": "Small label",
+                  "widget": "string",
+                  "required": false
+                },
+                {
+                  "name": "name",
+                  "label": "Name",
+                  "widget": "string"
+                },
+                {
+                  "name": "price",
+                  "label": "Price (optional)",
+                  "widget": "string",
+                  "required": false,
+                  "hint": "For example $120. Leave empty to hide the price."
+                },
+                {
+                  "name": "price_note",
+                  "label": "Price note (optional)",
+                  "widget": "string",
+                  "required": false,
+                  "hint": "For example / 60 min"
+                },
+                {
+                  "name": "description",
+                  "label": "Description",
+                  "widget": "text",
+                  "required": false
+                },
+                {
+                  "name": "bullets",
+                  "label": "Bullet points",
+                  "widget": "list",
+                  "required": false,
+                  "field": {
+                    "name": "text",
+                    "label": "Bullet",
+                    "widget": "text"
+                  }
+                },
+                {
+                  "name": "button",
+                  "label": "Button text",
+                  "widget": "string"
+                }
+              ]
+            },
+            {
               "name": "wellness",
               "label": "Wellness Pilates box",
               "widget": "object",

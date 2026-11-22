@@ -466,9 +466,13 @@ footer{padding:64px 0 40px}
   <ul>{{#each pricing.open_studio.bullets}}<li>{{.}}</li>{{/each pricing.open_studio.bullets}}</ul>{{#if pricing.open_studio.button}}
   <a href="#osbook" class="btn btn-book obtn alt-b">{{pricing.open_studio.button}}</a>{{/if pricing.open_studio.button}}</div>
 
- <div class="plan well dark"><div class="wl-l"><div class="k">{{pricing.wellness.label}}</div><h3>{{pricing.wellness.name}}</h3><div class="alt">{{pricing.wellness.description}}</div></div>
+ {{#if pricing.mentoring.show}}<div class="plan well dark mentor"><div class="wl-l">{{#if pricing.mentoring.label}}<div class="k">{{pricing.mentoring.label}}</div>{{/if pricing.mentoring.label}}<h3>{{pricing.mentoring.name}}</h3>{{#if pricing.mentoring.price}}<div class="oprice"><span>{{pricing.mentoring.price}} <small>{{pricing.mentoring.price_note}}</small></span></div>{{/if pricing.mentoring.price}}<div class="alt">{{pricing.mentoring.description}}</div></div>
+  {{#if pricing.mentoring.bullets}}<ul>{{#each pricing.mentoring.bullets}}<li>{{.}}</li>{{/each pricing.mentoring.bullets}}</ul>{{/if pricing.mentoring.bullets}}
+  <a href="#private" class="btn btn-book wbtn alt-w" data-kind="Mentoring session">{{pricing.mentoring.button}}</a></div>{{/if pricing.mentoring.show}}
+
+ <div class="plan well {{#if pricing.mentoring.show}}wlite{{/if pricing.mentoring.show}}{{#unless pricing.mentoring.show}}dark{{/unless pricing.mentoring.show}}"><div class="wl-l"><div class="k">{{pricing.wellness.label}}</div><h3>{{pricing.wellness.name}}</h3><div class="alt">{{pricing.wellness.description}}</div></div>
   <ul>{{#each pricing.wellness.bullets}}<li>{{.}}</li>{{/each pricing.wellness.bullets}}</ul>
-  <a href="#wellbook" class="btn btn-book wbtn alt-w">{{pricing.wellness.button}}</a></div>
+  <a href="#wellbook" class="btn btn-book wbtn {{#if pricing.mentoring.show}}alt-b{{/if pricing.mentoring.show}}{{#unless pricing.mentoring.show}}alt-w{{/unless pricing.mentoring.show}}">{{pricing.wellness.button}}</a></div>
  <p class="paynote">{{pricing.note}}</p>
 </div></section>
 
@@ -585,7 +589,7 @@ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
     <div class="fields">
      <p class="sub">Tell us when you'd like to come in, and Lynn will be in touch to confirm.</p>
      <label for="pk">Session</label>
-     <select id="pk" name="session"><option>Private session (50 min)</option><option>Mini private (30 min)</option></select>
+     <select id="pk" name="session"><option>Private session (50 min)</option><option>Mini private (30 min)</option><option>Mentoring session</option></select>
      <div class="two"><div><label for="pd">Preferred day</label><input id="pd" name="preferred-day" placeholder="e.g. Tuesday or Nov 18" required></div>
      <div><label for="pt">Preferred time</label><input id="pt" name="preferred-time" placeholder="e.g. 10:00 AM" required></div></div>
      <label id="pl">In studio or Zoom</label>

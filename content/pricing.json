@@ -90,6 +90,16 @@
     ],
     "button": "Book Open Studio"
   },
+  "mentoring": {
+    "show": true,
+    "label": "For Pilates professionals",
+    "name": "Mentoring Session",
+    "price": "",
+    "price_note": "",
+    "description": "Lynn will add the description for this session.",
+    "bullets": [],
+    "button": "Request a mentoring session"
+  },
   "wellness": {
     "label": "Wellness Pilates Sessions & Workshops with Jen",
     "name": "Wellness Session",
