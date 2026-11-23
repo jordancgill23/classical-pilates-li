@@ -5,7 +5,7 @@
   "equipment": [
     {
       "name": "Reformer",
-      "caption": "Built to reform your body. Provides a full-body workout with every move.",
+      "caption": "Built to reform your body. Provides a full-body workout with every move",
       "image": "/images/app-reformer.jpg",
       "alt": "Reformers in the studio"
     },
@@ -29,19 +29,19 @@
     },
     {
       "name": "Electric chair",
-      "caption": "Lower-body control",
+      "caption": "Develop the power to climb, lift, and control your body",
       "image": "/images/app-electric.jpg",
       "alt": "Electric chair"
     },
     {
       "name": "Arm chair",
-      "caption": "Upper-body strength",
+      "caption": "Develop strong shoulder, back, and arm connection",
       "image": "/images/app-arm.jpg",
       "alt": "Arm chair"
     },
     {
       "name": "Pedi-Pole",
-      "caption": "Posture and alignment",
+      "caption": "Stand taller through balance, alignment, and control",
       "image": "",
       "alt": ""
     },
