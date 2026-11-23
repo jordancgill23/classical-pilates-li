@@ -23,11 +23,11 @@
   "faqs": [
     {
       "question": "What's your cancellation policy?",
-      "answer": "Please cancel at least 24 hours before your session."
+      "answer": "Must cancel at least 24 hours before your session."
     },
     {
       "question": "I've never done Pilates. Is that okay?",
-      "answer": "Absolutely. Every new client starts with a $40 Foundational Connections session to learn the essentials and the Pilates Intelligence Program™ before joining classes."
+      "answer": "Absolutely. Every new client starts with a $40 First Session to learn the essentials before joining open-level sessions."
     },
     {
       "question": "How many people are in a class?",
@@ -35,7 +35,7 @@
     },
     {
       "question": "I have an injury. Can I still come?",
-      "answer": "Yes. Let Lynn know about any injuries or physical concerns when you book, and your program will be built around them."
+      "answer": "Please let Lynn know about any injuries or physical concerns. She will help determine whether group or private sessions are the best fit."
     },
     {
       "question": "Where do I park?",
@@ -43,7 +43,7 @@
     },
     {
       "question": "How do I pay?",
-      "answer": "With Venmo or a Vagaro membership."
+      "answer": "With Venmo, through Vagaro or cash."
     }
   ]
 }
