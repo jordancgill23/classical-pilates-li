@@ -1015,6 +1015,20 @@
               ]
             },
             {
+              "name": "all_button",
+              "label": "\"See all reviews\" button text",
+              "widget": "string",
+              "required": false,
+              "hint": "Leave empty to hide the button."
+            },
+            {
+              "name": "all_link",
+              "label": "\"See all reviews\" link",
+              "widget": "string",
+              "required": false,
+              "hint": "Your Google reviews page."
+            },
+            {
               "name": "look",
               "label": "Text style (optional)",
               "widget": "object",
