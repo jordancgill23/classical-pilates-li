@@ -3,30 +3,44 @@
   "heading": "What our students *say*.",
   "items": [
     {
-      "quote": "**Results**\n\nI’ve tried a lot of workouts, but doing Pilates with Lynn has completely changed the way I feel in my body. My core feels stronger, my posture is better… I leave every class feeling taller, stronger, and more energized\n",
-      "name": "— Christine M. ★★★★★"
+      "title": "Results",
+      "quote": "I’ve tried a lot of workouts, but doing Pilates with Lynn has completely changed the way I feel in my body. My core feels stronger, my posture is better… I leave every class feeling taller, stronger, and more energized",
+      "name": "Christine M.",
+      "source": "Google Review"
     },
     {
-      "quote": "**Core strength after having kids**\n\n\"Nothing can compare to Classical Pilates. I love the small classes and individual attention… I've seen the difference in my core strength that I haven't had since before I had children.\"\n",
-      "name": "— Janice F. ★★★★★"
+      "title": "Core strength after having kids",
+      "quote": "Nothing can compare to Classical Pilates. I love the small classes and individual attention… I've seen the difference in my core strength that I haven't had since before I had children.",
+      "name": "Janice F.",
+      "source": "Google Review"
     },
     {
-      "quote": "**Small classes, authentic method**\n\n\"What sets her apart is her dedication to the authentic, original method directly passed down from Joseph Pilates… You truly get the benefits of private coaching even in a small group setting.\"\n",
-      "name": "— Anna L. ★★★★★"
+      "title": "Small classes, authentic method",
+      "quote": "What sets her apart is her dedication to the authentic, original method directly passed down from Joseph Pilates… You truly get the benefits of private coaching even in a small group setting.",
+      "name": "Anna L.",
+      "source": "Google Review"
     },
     {
-      "quote": "**Recovery**\n\n\"I was deconditioned after an illness and began working with her 8 months ago. She is very knowledgeable and patient and has helped me regain a lot of my strength and flexibility. I travel a longer distance to her but it is well worth it.\"",
-      "name": "— Alisa P. ★★★★★"
+      "title": "Recovery",
+      "quote": "I was deconditioned after an illness and began working with her 8 months ago. She is very knowledgeable and patient and has helped me regain a lot of my strength and flexibility. I travel a longer distance to her but it is well worth it.",
+      "name": "Alisa P.",
+      "source": "Google Review"
     },
     {
-      "quote": "**The studio**\n\n\"She creates such a welcoming and comfortable environment and tailors each session to her clients' individual goals and needs… Her private studio has more equipment than any other studio I've been to, and it's always spotless.\"",
-      "name": "— Juliana M. ★★★★★"
+      "title": "The studio",
+      "quote": "She creates such a welcoming and comfortable environment and tailors each session to her clients' individual goals and needs… Her private studio has more equipment than any other studio I've been to, and it's always spotless.",
+      "name": "Juliana M.",
+      "source": "Google Review"
     },
     {
-      "quote": "**Expertise**\n\n\"She is an expert at spotting imbalances in the body and provides guidance on how to correct them. I am a figure skater… My balance, core activation, and posture has noticeably improved since working with her.\"",
-      "name": "— Lindsey K. ★★★★★"
+      "title": "Expertise",
+      "quote": "She is an expert at spotting imbalances in the body and provides guidance on how to correct them. I am a figure skater… My balance, core activation, and posture has noticeably improved since working with her.",
+      "name": "Lindsey K.",
+      "source": "Google Review"
     }
   ],
   "all_button": "See all reviews",
-  "all_link": "https://search.google.com/local/reviews?placeid=ChIJ57Cz4NFJ6IkR4g8LLqjTK94"
+  "all_link": "https://search.google.com/local/reviews?placeid=ChIJ57Cz4NFJ6IkR4g8LLqjTK94",
+  "summary": "5.0 · 33 Google reviews",
+  "summary_link": "https://search.google.com/local/reviews?placeid=ChIJ57Cz4NFJ6IkR4g8LLqjTK94"
 }

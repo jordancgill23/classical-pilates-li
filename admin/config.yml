@@ -996,21 +996,50 @@
               "hint": "Put *stars* around a word to show it in copper italics."
             },
             {
+              "name": "summary",
+              "label": "Rating line under the heading (optional)",
+              "widget": "string",
+              "required": false,
+              "hint": "For example 5.0 · 33 Google reviews. Update the number now and then. Leave empty to hide."
+            },
+            {
+              "name": "summary_link",
+              "label": "Rating line link",
+              "widget": "string",
+              "required": false
+            },
+            {
               "name": "items",
               "label": "Reviews",
               "widget": "list",
-              "summary": "{{fields.quote}}",
+              "summary": "{{fields.name}} – {{fields.title}}",
               "fields": [
+                {
+                  "name": "title",
+                  "label": "Short title (optional)",
+                  "widget": "string",
+                  "required": false,
+                  "hint": "A few words shown above the review, like Recovery or The studio."
+                },
                 {
                   "name": "quote",
                   "label": "Review",
                   "widget": "text",
-                  "hint": "No quotation marks needed, they are added for you."
+                  "hint": "Just the review text. Quotation marks and stars are added for you."
                 },
                 {
                   "name": "name",
-                  "label": "Name shown under the review",
-                  "widget": "string"
+                  "label": "Reviewer name",
+                  "widget": "string",
+                  "hint": "For example Lindsey K. The dash is added for you."
+                },
+                {
+                  "name": "source",
+                  "label": "Source (optional)",
+                  "widget": "string",
+                  "required": false,
+                  "default": "Google Review",
+                  "hint": "Shown under the name, like Google Review."
                 }
               ]
             },
