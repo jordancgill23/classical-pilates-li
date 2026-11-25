@@ -3,16 +3,9 @@
   "button": "Book your $40 first session",
   "slides": [
     {
-      "image": "/images/hero-studio.jpg",
-      "alt": "Calm Pilates studio with rows of reformers"
-    },
-    {
-      "image": "/images/hero-reformer-arches.jpg",
-      "alt": "Client in a side plank on a reformer"
-    },
-    {
-      "image": "/images/hero-reformer-plank.jpg",
-      "alt": "Client in a plank on a reformer in a warm studio"
+      "image": "/images/uploads/studio-overhead.jpg",
+      "alt": "Classical Pilates of Long Island studio with reformers, tower and Wunda chair",
+      "position": "50% 55%"
     }
   ]
 }

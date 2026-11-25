@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Classical Pilates of Long Island</title>
 <meta name="description" content="Classical Pilates of Long Island: private and semi-private classical Pilates on the full apparatus in Holbrook, NY.">
-<meta name="robots" content="noindex">
+<link rel="canonical" href="https://classicalpilatesli.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Classical Pilates of Long Island">
 <meta property="og:title" content="Classical Pilates of Long Island">
 <meta property="og:description" content="Classical Pilates of Long Island: private and semi-private classical Pilates on the full apparatus in Holbrook, NY.">
-<meta property="og:url" content="https://classical-pilates-li-v2.netlify.app/">
-<meta property="og:image" content="https://classical-pilates-li-v2.netlify.app/images/share.jpg">
+<meta property="og:url" content="https://classicalpilatesli.com/">
+<meta property="og:image" content="https://classicalpilatesli.com/images/share.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Classical Pilates of Long Island logo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://classical-pilates-li-v2.netlify.app/images/share.jpg">
+<meta name="twitter:image" content="https://classicalpilatesli.com/images/share.jpg">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 
@@ -410,7 +410,7 @@ footer{padding:64px 0 40px}
 <body>
 
 <header class="hero">
- {{#each hero.slides}}<img class="slide" src="{{attr:image}}" alt="{{attr:alt}}" style="opacity:{{@op}}">
+ {{#each hero.slides}}<img class="slide" src="{{attr:image}}" alt="{{attr:alt}}" style="opacity:{{@op}};object-position:{{attr:position}}">
  {{/each hero.slides}} <nav aria-label="Main"><div class="wrap">
   <a href="#" class="nlogo" aria-label="Classical Pilates of Long Island, top of page"><img src="images/logo-white.png" alt="Classical Pilates of Long Island"></a>
   <div class="links"><a href="#studio">The studio</a><a href="#sessions">Classes &amp; pricing</a><a href="#lynn">Instructors</a><a href="#book">Visit</a></div>
@@ -588,7 +588,7 @@ function auto(){clearInterval(t);t=setInterval(()=>go(i+1),5500);}
 document.getElementById('prev').onclick=()=>{go(i-1);auto();};
 document.getElementById('next').onclick=()=>{go(i+1);auto();};
 d.forEach((e,k)=>e.onclick=()=>{go(k);auto();});
-if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
+if(s.length<2){var c=document.querySelector('.ctrl');if(c)c.style.display='none';}else if(!matchMedia('(prefers-reduced-motion: reduce)').matches)auto();
 
 </script>
 
