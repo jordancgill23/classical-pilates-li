@@ -7,8 +7,8 @@
       "update": "Website edit: {{slug}}"
     }
   },
-  "site_url": "https://classicalpilatesli.com",
-  "display_url": "https://classicalpilatesli.com",
+  "site_url": "https://classical-pilates-li-v2.netlify.app",
+  "display_url": "https://classical-pilates-li-v2.netlify.app",
   "locale": "en",
   "media_folder": "images/uploads",
   "public_folder": "/images/uploads",
