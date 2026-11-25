@@ -17,7 +17,9 @@
       "photo_position": "38% 30%",
       "link": "#lynnbook",
       "photo_alt": "Lynn Melfi, owner and instructor",
-      "credentials": "NCPT · Third-generation Classical Instructor · 16+ years teaching"
+      "credentials": "NCPT · Third-generation Classical Instructor · 16+ years teaching",
+      "instagram": "https://www.instagram.com/classicalpilatesli",
+      "instagram_label": "Connect with Lynn"
     },
     {
       "bio": [
@@ -34,7 +36,9 @@
       "photo_position": "",
       "link": "#jenall",
       "photo_alt": "Jen Ward, Wellness Pilates instructor",
-      "credentials": "Classical Pilates Instructor · Licensed Acupuncturist · Ayurvedic Practitioner · Pelvic Floor Specialist"
+      "credentials": "Classical Pilates Instructor · Licensed Acupuncturist · Ayurvedic Practitioner · Pelvic Floor Specialist",
+      "instagram": "",
+      "instagram_label": "Connect with Jen"
     }
   ]
 }
