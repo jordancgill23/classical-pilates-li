@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /booking-
+
+Sitemap: https://classicalpilatesli.com/sitemap.xml

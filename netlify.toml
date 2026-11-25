@@ -6,3 +6,34 @@
   for = "/admin/*"
   [headers.values]
     X-Robots-Tag = "noindex"
+
+# Old WordPress pages -> matching section of the new site
+[[redirects]]
+  from = "/sessions/*"
+  to = "/#sessions"
+  status = 301
+[[redirects]]
+  from = "/contact/*"
+  to = "/#book"
+  status = 301
+[[redirects]]
+  from = "/your-instructor/*"
+  to = "/#lynn"
+  status = 301
+[[redirects]]
+  from = "/l-m-melfi-pages/*"
+  to = "/#lynn"
+  status = 301
+[[redirects]]
+  from = "/what-to-expect/*"
+  to = "/#faq"
+  status = 301
+[[redirects]]
+  from = "/why-pilates/*"
+  to = "/#program"
+  status = 301
+# Anything else from the old site that no longer exists -> home page
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
