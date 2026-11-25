@@ -32,8 +32,3 @@
   from = "/why-pilates/*"
   to = "/#program"
   status = 301
-# Anything else from the old site that no longer exists -> home page
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 301
