@@ -3,28 +3,34 @@
   "heading": "What our students *say*.",
   "items": [
     {
-      "quote": "**Results**\n\nI’ve tried a lot of workouts, but Pilates with Lynn has completely changed how I feel in my body. My core feels stronger, my posture is better… I leave every class feeling taller, stronger, and more energized\n",
-      "name": "— Christine M. ★★★★★"
+      "quote": "I’ve tried a lot of workouts, but Pilates with Lynn has completely changed how I feel in my body. My core feels stronger, my posture is better… I leave every class feeling taller, stronger, and more energized\n",
+      "name": "— Christine M. ★★★★★",
+      "title": "Results"
     },
     {
-      "quote": "**Core strength after having kids**\n\n\"Nothing can compare to Classical Pilates. I love the small classes and individual attention… I've seen the difference in my core strength that I haven't had since before I had children.\"\n",
-      "name": "— Janice F. ★★★★★"
+      "quote": "Nothing can compare to Classical Pilates. I love the small classes and individual attention… I've seen the difference in my core strength that I haven't had since before I had children.",
+      "name": "— Janice F. ★★★★★",
+      "title": "Core strength after having kids"
     },
     {
-      "quote": "**Small classes, authentic method**\n\n\"What sets her apart is her dedication to the authentic, original method directly passed down from Joseph Pilates… You truly get the benefits of private coaching even in a small group setting.\"\n",
-      "name": "— Anna L. ★★★★★"
+      "quote": "What sets her apart is her dedication to the authentic, original method directly passed down from Joseph Pilates… You truly get the benefits of private coaching even in a small group setting.\n",
+      "name": "— Anna L. ★★★★★",
+      "title": "Small classes, authentic method"
     },
     {
-      "quote": "**Recovery**\n\n\"I was deconditioned after an illness and began working with her 8 months ago. She is very knowledgeable and patient, and she has helped me regain much of my strength and flexibility. I travel a longer distance to her, but it is well worth it.\"",
-      "name": "— Alisa P. ★★★★★"
+      "quote": "I was deconditioned after an illness and began working with her 8 months ago. She is very knowledgeable and patient, and she has helped me regain much of my strength and flexibility. I travel a longer distance to her, but it is well worth it.",
+      "name": "— Alisa P. ★★★★★",
+      "title": "Recovery"
     },
     {
-      "quote": "**The studio**\n\n\"She creates such a welcoming and comfortable environment and tailors each session to her clients' individual goals and needs... Her private studio has more equipment than any other studio I've been to, and it's always spotless.\"",
-      "name": "— Juliana M. ★★★★★"
+      "quote": "She creates such a welcoming and comfortable environment and tailors each session to her clients' individual goals and needs... Her private studio has more equipment than any other studio I've been to, and it's always spotless.",
+      "name": "— Juliana M. ★★★★★",
+      "title": "The studio"
     },
     {
-      "quote": "**Expertise**\n\n\"She is an expert at spotting imbalances in the body and provides guidance on how to correct them. I am a figure skater... My balance, core activation, and posture have noticeably improved since working with her.\"",
-      "name": "— Lindsey K. ★★★★★"
+      "quote": "She is an expert at spotting imbalances in the body and provides guidance on how to correct them. I am a figure skater... My balance, core activation, and posture have noticeably improved since working with her.",
+      "name": "— Lindsey K. ★★★★★",
+      "title": "Expertise"
     },
     {
       "source": "",
